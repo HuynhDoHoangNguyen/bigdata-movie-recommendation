@@ -266,3 +266,172 @@ Dataset
 ```
 
 TV1 không thực hiện ALS hoặc tuning mô hình.
+
+## 12. Setup from a fresh clone
+
+Raw MovieLens CSV files are **not committed to Git**. A fresh machine recreates them from the official GroupLens download, then uploads them to HDFS.
+
+### Step 1 - Clone repository
+
+```powershell
+git clone https://github.com/<USERNAME>/bigdata-movie-recommendation.git
+cd bigdata-movie-recommendation
+```
+
+### Step 2 - Download MovieLens 32M
+
+```powershell
+.\scripts\download_movielens.ps1
+```
+
+The script:
+
+```text
+Official GroupLens
+    ↓
+ml-32m.zip
+    ↓
+extract
+    ↓
+data/ml-32m/
+    ↓
+verify MD5 checksums
+```
+
+Expected local data:
+
+```text
+data/ml-32m/
+├── checksums.txt
+├── links.csv
+├── movies.csv
+├── ratings.csv
+├── README.txt
+└── tags.csv
+```
+
+If PowerShell blocks local scripts for the current terminal session:
+
+```powershell
+Set-ExecutionPolicy -Scope Process Bypass
+```
+
+Then run the download script again.
+
+### Step 3 - Start Hadoop + Spark
+
+```powershell
+docker compose up -d
+docker compose ps
+```
+
+Expected services:
+
+```text
+namenode
+datanode1
+datanode2
+datanode3
+spark-master
+spark-worker1
+spark-worker2
+```
+
+### Step 4 - Upload RAW data to HDFS
+
+```powershell
+.\scripts\upload_to_hdfs.ps1
+```
+
+The script automatically:
+
+```text
+creates /project/movielens/{raw,standard,output}
+    ↓
+copies local MovieLens files into namenode
+    ↓
+uploads CSV files into HDFS /raw
+    ↓
+lists HDFS files
+    ↓
+runs fsck on ratings.csv
+    ↓
+removes the temporary container copy
+```
+
+Expected RAW layer:
+
+```text
+/project/movielens/raw/
+├── links.csv
+├── movies.csv
+├── ratings.csv
+└── tags.csv
+```
+
+### Step 5 - Inspect and validate data
+
+```powershell
+docker exec -it spark-master /opt/spark/bin/spark-submit --master spark://spark-master:7077 --deploy-mode client --conf spark.driver.host=spark-master --conf spark.driver.bindAddress=0.0.0.0 /opt/spark-apps/inspect_movielens.py
+```
+
+```powershell
+docker exec -it spark-master /opt/spark/bin/spark-submit --master spark://spark-master:7077 --deploy-mode client --conf spark.driver.host=spark-master --conf spark.driver.bindAddress=0.0.0.0 /opt/spark-apps/data_quality.py
+```
+
+```powershell
+docker exec -it spark-master /opt/spark/bin/spark-submit --master spark://spark-master:7077 --deploy-mode client --conf spark.driver.host=spark-master --conf spark.driver.bindAddress=0.0.0.0 /opt/spark-apps/referential_integrity.py
+```
+
+```powershell
+docker exec -it spark-master /opt/spark/bin/spark-submit --master spark://spark-master:7077 --deploy-mode client --conf spark.driver.host=spark-master --conf spark.driver.bindAddress=0.0.0.0 /opt/spark-apps/profile_movielens.py
+```
+
+### Step 6 - Build Standard Parquet layer
+
+```powershell
+docker exec -it spark-master /opt/spark/bin/spark-submit --master spark://spark-master:7077 --deploy-mode client --conf spark.driver.host=spark-master --conf spark.driver.bindAddress=0.0.0.0 /opt/spark-apps/build_standard_layer.py
+```
+
+### Step 7 - Verify Standard Layer
+
+```powershell
+docker exec -it spark-master /opt/spark/bin/spark-submit --master spark://spark-master:7077 --deploy-mode client --conf spark.driver.host=spark-master --conf spark.driver.bindAddress=0.0.0.0 /opt/spark-apps/verify_standard_layer.py
+```
+
+Expected counts:
+
+```text
+Ratings : 32,000,204
+Movies  : 87,585
+Tags    : 2,000,072
+Links   : 87,585
+```
+
+At this point the TV1 pipeline has been reproduced from scratch and the Standard Layer is ready for TV2.
+
+## 13. Why raw CSV files are not stored in Git
+
+The repository stores **code, configuration, documentation, and reproducible setup scripts**, not the large MovieLens CSV payload.
+
+The reproducible path is:
+
+```text
+Git repository
+    ↓
+download_movielens.ps1
+    ↓
+Official MovieLens 32M
+    ↓
+Local RAW files
+    ↓
+upload_to_hdfs.ps1
+    ↓
+HDFS RAW
+    ↓
+Spark
+    ↓
+HDFS STANDARD
+```
+
+This keeps the repository small and ensures every team member can recreate the same data pipeline from the official dataset source.

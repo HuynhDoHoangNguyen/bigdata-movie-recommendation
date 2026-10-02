@@ -46,6 +46,10 @@ bigdata-movie-recommendation/
 │       ├── tags.csv
 │       └── links.csv
 │
+├── scripts/
+│   ├── download_movielens.ps1
+│   └── upload_to_hdfs.ps1
+│
 ├── spark/
 │   ├── hello_spark.py
 │   ├── read_ratings.py
@@ -481,3 +485,18 @@ Data Validation    ✅
 Data Profiling     ✅
 TV1 → TV2 Handover ✅
 ```
+
+
+## 17. `scripts/`
+
+`scripts/` chứa các script bootstrap để một máy mới tái tạo pipeline mà không cần commit RAW CSV lên Git.
+
+```text
+scripts/
+├── download_movielens.ps1
+└── upload_to_hdfs.ps1
+```
+
+`download_movielens.ps1` tải MovieLens 32M từ nguồn chính thức, giải nén vào `data/ml-32m/` và kiểm tra MD5.
+
+`upload_to_hdfs.ps1` tạo HDFS directories, copy dataset tạm vào NameNode container, upload 4 CSV vào `/project/movielens/raw/`, chạy `fsck` và xóa bản tạm trong container.
