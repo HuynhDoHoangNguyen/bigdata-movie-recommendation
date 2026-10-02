@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+    <!-- Mỗi block sẽ có 3 bản sao -->
+    <property>
+        <name>dfs.replication</name>
+        <value>3</value>
+    </property>
+
+    <!-- Nơi NameNode lưu metadata -->
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:///data/name</value>
+    </property>
+
+    <!-- Nơi mỗi DataNode lưu block dữ liệu -->
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:///data/data</value>
+    </property>
+
+    <!-- Tắt permission để dễ thực hành local -->
+    <property>
+        <name>dfs.permissions.enabled</name>
+        <value>false</value>
+    </property>
+
+</configuration>

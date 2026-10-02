@@ -1,0 +1,175 @@
+services:
+
+  namenode:
+    image: apache/hadoop:3.5.0
+    container_name: namenode
+    hostname: namenode
+    user: root
+
+    ports:
+      - "9870:9870"
+      - "9000:9000"
+
+    volumes:
+      - namenode_data:/data/name
+      - ./config/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml:ro
+      - ./config/hdfs-site.xml:/opt/hadoop/etc/hadoop/hdfs-site.xml:ro
+
+    command: >
+      bash -c "
+        if [ ! -d /data/name/current ]; then
+          hdfs namenode -format -force;
+        fi &&
+        exec hdfs namenode
+      "
+
+    networks:
+      - bigdata-network
+
+  datanode1:
+    image: apache/hadoop:3.5.0
+    container_name: datanode1
+    hostname: datanode1
+    user: root
+
+    depends_on:
+      - namenode
+
+    ports:
+      - "9864:9864"
+
+    volumes:
+      - datanode1_data:/data/data
+      - ./config/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml:ro
+      - ./config/hdfs-site.xml:/opt/hadoop/etc/hadoop/hdfs-site.xml:ro
+
+    command: [ "hdfs", "datanode" ]
+
+    networks:
+      - bigdata-network
+
+  datanode2:
+    image: apache/hadoop:3.5.0
+    container_name: datanode2
+    hostname: datanode2
+    user: root
+
+    depends_on:
+      - namenode
+
+    ports:
+      - "9865:9864"
+
+    volumes:
+      - datanode2_data:/data/data
+      - ./config/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml:ro
+      - ./config/hdfs-site.xml:/opt/hadoop/etc/hadoop/hdfs-site.xml:ro
+
+    command: [ "hdfs", "datanode" ]
+
+    networks:
+      - bigdata-network
+
+  datanode3:
+    image: apache/hadoop:3.5.0
+    container_name: datanode3
+    hostname: datanode3
+    user: root
+
+    depends_on:
+      - namenode
+
+    ports:
+      - "9866:9864"
+
+    volumes:
+      - datanode3_data:/data/data
+      - ./config/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml:ro
+      - ./config/hdfs-site.xml:/opt/hadoop/etc/hadoop/hdfs-site.xml:ro
+
+    command: [ "hdfs", "datanode" ]
+
+    networks:
+      - bigdata-network
+  spark-master:
+    image: apache/spark:3.5.9-scala2.12-java17-python3-ubuntu
+    container_name: spark-master
+    hostname: spark-master
+
+    depends_on:
+      - namenode
+
+    ports:
+      - "7077:7077"
+      - "8080:8080"
+
+    environment:
+      HADOOP_CONF_DIR: /opt/hadoop-conf
+      PYSPARK_PYTHON: python3
+
+    volumes:
+      - ./config:/opt/hadoop-conf:ro
+      - ./spark:/opt/spark-apps
+
+    command: [ "/opt/spark/bin/spark-class", "org.apache.spark.deploy.master.Master", "--host", "spark-master", "--port", "7077", "--webui-port", "8080" ]
+
+    networks:
+      - bigdata-network
+
+  spark-worker1:
+    image: apache/spark:3.5.9-scala2.12-java17-python3-ubuntu
+    container_name: spark-worker1
+    hostname: spark-worker1
+
+    depends_on:
+      - spark-master
+
+    ports:
+      - "8081:8081"
+
+    environment:
+      HADOOP_CONF_DIR: /opt/hadoop-conf
+      PYSPARK_PYTHON: python3
+
+    volumes:
+      - ./config:/opt/hadoop-conf:ro
+      - ./spark:/opt/spark-apps
+
+    command: [ "/opt/spark/bin/spark-class", "org.apache.spark.deploy.worker.Worker", "spark://spark-master:7077", "--cores", "2", "--memory", "2g", "--webui-port", "8081" ]
+
+    networks:
+      - bigdata-network
+
+  spark-worker2:
+    image: apache/spark:3.5.9-scala2.12-java17-python3-ubuntu
+    container_name: spark-worker2
+    hostname: spark-worker2
+
+    depends_on:
+      - spark-master
+
+    ports:
+      - "8082:8081"
+
+    environment:
+      HADOOP_CONF_DIR: /opt/hadoop-conf
+      PYSPARK_PYTHON: python3
+
+    volumes:
+      - ./config:/opt/hadoop-conf:ro
+      - ./spark:/opt/spark-apps
+
+    command: [ "/opt/spark/bin/spark-class", "org.apache.spark.deploy.worker.Worker", "spark://spark-master:7077", "--cores", "2", "--memory", "2g", "--webui-port", "8081" ]
+
+    networks:
+      - bigdata-network
+
+volumes:
+  namenode_data:
+  datanode1_data:
+  datanode2_data:
+  datanode3_data:
+
+networks:
+  bigdata-network:
+    driver: bridge
