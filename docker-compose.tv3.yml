@@ -1,0 +1,12 @@
+﻿services:
+  spark-master:
+    image: movie-recommendation-spark:3.5.9
+    build:
+      context: .
+      dockerfile: docker/spark/Dockerfile
+
+  spark-worker1:
+    image: movie-recommendation-spark:3.5.9
+
+  spark-worker2:
+    image: movie-recommendation-spark:3.5.9
