@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block title %}Phân tích | Big Data Movie Recommendation{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h2 class="border-bottom pb-3">Phân tích dữ liệu MovieLens 32M</h2>
+    </div>
+</div>
+
+<div class="row g-4 mb-4">
+    <!-- Rating Distribution -->
+    <div class="col-lg-6">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Phân bố Rating</h5>
+            </div>
+            <div class="card-body">
+                <div style="height: 350px;">
+                    <canvas id="ratingDistChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trend Rating -->
+    <div class="col-lg-6">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Xu hướng rating theo năm</h5>
+            </div>
+            <div class="card-body">
+                <div style="height: 350px;">
+                    <canvas id="trendChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4 mb-4">
+    <!-- Top Movies -->
+    <div class="col-lg-6">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Top 20 phim phổ biến nhất</h5>
+            </div>
+            <div class="card-body">
+                <div style="height: 400px;">
+                    <canvas id="moviePopChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Genre Chart -->
+    <div class="col-lg-6">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Thể loại phim</h5>
+            </div>
+            <div class="card-body">
+                <div style="height: 400px;">
+                    <canvas id="genreChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <!-- Top Tags -->
+    <div class="col-12">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Top 20 Tags phổ biến</h5>
+            </div>
+            <div class="card-body">
+                <div style="height: 400px;">
+                    <canvas id="tagChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      if (typeof loadAllCharts === "function") {
+          loadAllCharts();
+      } else {
+          console.warn("loadAllCharts function is not defined in main.js");
+      }
+  });
+</script>
+{% endblock %}

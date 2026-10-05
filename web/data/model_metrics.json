@@ -1,0 +1,16 @@
+{
+  "scope": "SAMPLE (10,000 / 200,948 users)",
+  "sample_users": 10000,
+  "rmse": 0.8146,
+  "mae": 0.6201,
+  "rank": 10,
+  "maxIter": 8,
+  "regParam": 0.05,
+  "seed": 42,
+  "coverage": "99.20%",
+  "status": "SAMPLE_COMPLETE_WARNING",
+  "training_time_sec": 9.19,
+  "evaluation_rows": 315869,
+  "valid_prediction_rows": 313351,
+  "dropped_rows": 2518
+}

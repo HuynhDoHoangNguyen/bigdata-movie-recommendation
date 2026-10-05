@@ -1,0 +1,162 @@
+[
+  {
+    "movieId": 356,
+    "title": "Forrest Gump (1994)",
+    "genres": "Comedy|Drama|Romance|War",
+    "rating_count": 102929,
+    "average_rating": 4.05,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 318,
+    "title": "Shawshank Redemption, The (1994)",
+    "genres": "Crime|Drama",
+    "rating_count": 98732,
+    "average_rating": 4.41,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 296,
+    "title": "Pulp Fiction (1994)",
+    "genres": "Comedy|Crime|Drama|Thriller",
+    "rating_count": 96231,
+    "average_rating": 4.18,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 593,
+    "title": "Silence of the Lambs, The (1991)",
+    "genres": "Crime|Horror|Thriller",
+    "rating_count": 87955,
+    "average_rating": 4.14,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 2571,
+    "title": "Matrix, The (1999)",
+    "genres": "Action|Sci-Fi|Thriller",
+    "rating_count": 84520,
+    "average_rating": 4.15,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 260,
+    "title": "Star Wars: Episode IV - A New Hope (1977)",
+    "genres": "Action|Adventure|Sci-Fi",
+    "rating_count": 81896,
+    "average_rating": 4.09,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 480,
+    "title": "Jurassic Park (1993)",
+    "genres": "Action|Adventure|Sci-Fi|Thriller",
+    "rating_count": 76451,
+    "average_rating": 3.67,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 858,
+    "title": "Godfather, The (1972)",
+    "genres": "Crime|Drama",
+    "rating_count": 68340,
+    "average_rating": 4.31,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 110,
+    "title": "Braveheart (1995)",
+    "genres": "Action|Drama|War",
+    "rating_count": 68005,
+    "average_rating": 4.0,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 2959,
+    "title": "Fight Club (1999)",
+    "genres": "Action|Crime|Drama|Thriller",
+    "rating_count": 67245,
+    "average_rating": 4.22,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 589,
+    "title": "Terminator 2: Judgment Day (1991)",
+    "genres": "Action|Sci-Fi",
+    "rating_count": 67011,
+    "average_rating": 3.97,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 1196,
+    "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+    "genres": "Action|Adventure|Sci-Fi",
+    "rating_count": 65822,
+    "average_rating": 4.13,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 4993,
+    "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+    "genres": "Adventure|Fantasy",
+    "rating_count": 64188,
+    "average_rating": 4.1,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 50,
+    "title": "Usual Suspects, The (1995)",
+    "genres": "Crime|Mystery|Thriller",
+    "rating_count": 62180,
+    "average_rating": 4.26,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 7153,
+    "title": "Lord of the Rings: The Return of the King, The (2003)",
+    "genres": "Action|Adventure|Drama|Fantasy",
+    "rating_count": 59210,
+    "average_rating": 4.11,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 1198,
+    "title": "Raiders of the Lost Ark (Indiana Jones) (1981)",
+    "genres": "Action|Adventure",
+    "rating_count": 58432,
+    "average_rating": 4.18,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 5952,
+    "title": "Lord of the Rings: The Two Towers, The (2002)",
+    "genres": "Adventure|Fantasy",
+    "rating_count": 57640,
+    "average_rating": 4.08,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 1,
+    "title": "Toy Story (1995)",
+    "genres": "Adventure|Animation|Children|Comedy|Fantasy",
+    "rating_count": 57342,
+    "average_rating": 3.89,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 527,
+    "title": "Schindlers List (1993)",
+    "genres": "Drama|War",
+    "rating_count": 56120,
+    "average_rating": 4.24,
+    "highly_rated_eligible": true
+  },
+  {
+    "movieId": 1210,
+    "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+    "genres": "Action|Adventure|Sci-Fi",
+    "rating_count": 55890,
+    "average_rating": 3.99,
+    "highly_rated_eligible": true
+  }
+]

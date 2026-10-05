@@ -1,0 +1,29 @@
+[
+  {
+    "method": "RAW Phase B ALS",
+    "parameter": 0,
+    "p10": "0.0000",
+    "r10": "0.0000",
+    "hr10": "0.000",
+    "hits": 0,
+    "users": 500
+  },
+  {
+    "method": "Phase B ALS + Shrinkage (α=50)",
+    "parameter": 50,
+    "p10": "0.0902",
+    "r10": "0.0705",
+    "hr10": "0.454",
+    "hits": 451,
+    "users": 500
+  },
+  {
+    "method": "Popularity Baseline (Core Train)",
+    "parameter": 0,
+    "p10": "0.1254",
+    "r10": "0.1004",
+    "hr10": "0.588",
+    "hits": 627,
+    "users": 500
+  }
+]

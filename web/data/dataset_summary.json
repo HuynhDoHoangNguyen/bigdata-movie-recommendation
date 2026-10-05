@@ -1,0 +1,12 @@
+{
+  "total_ratings": 32000204,
+  "total_users": 200948,
+  "catalog_movies": 87585,
+  "rated_movies": 84432,
+  "average_rating": 3.5404,
+  "min_rating": 0.5,
+  "max_rating": 5.0,
+  "first_rating_timestamp": 789652004,
+  "last_rating_timestamp": 1697164147,
+  "year_span": 28
+}

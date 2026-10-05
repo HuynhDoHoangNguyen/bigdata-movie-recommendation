@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard | Big Data Movie Recommendation{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12 text-center py-4 bg-light rounded shadow-sm">
+        <h1 class="display-5 fw-bold text-primary">Hệ thống gợi ý phim dựa trên Big Data</h1>
+        <p class="lead text-muted">Mô hình ALS trên tập dữ liệu MovieLens 32M</p>
+    </div>
+</div>
+
+<!-- Stats Section -->
+<div class="row g-4 mb-5">
+    <div class="col-md-3 col-sm-6">
+        <div class="card border-primary h-100 shadow-sm border-start border-4">
+            <div class="card-body text-center">
+                <h5 class="card-title text-muted">Ratings</h5>
+                <h2 class="card-text fw-bold text-primary">{{ stats.total_ratings | default('N/A') | format_number }}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="card border-success h-100 shadow-sm border-start border-4">
+            <div class="card-body text-center">
+                <h5 class="card-title text-muted">Users</h5>
+                <h2 class="card-text fw-bold text-success">{{ stats.total_users | default('N/A') | format_number }}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="card border-warning h-100 shadow-sm border-start border-4">
+            <div class="card-body text-center">
+                <h5 class="card-title text-muted">Movies</h5>
+                <h2 class="card-text fw-bold text-warning">{{ stats.catalog_movies | default('N/A') | format_number }}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="card border-purple h-100 shadow-sm border-start border-4" style="border-color: #6f42c1;">
+            <div class="card-body text-center">
+                <h5 class="card-title text-muted">Năm dữ liệu</h5>
+                <h2 class="card-text fw-bold" style="color: #6f42c1;">{{ stats.year_span | default(28) }}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pipeline Architecture -->
+<div class="card shadow-sm mb-5">
+    <div class="card-header bg-white">
+        <h4 class="mb-0">Kiến trúc Pipeline</h4>
+    </div>
+    <div class="card-body text-center overflow-auto py-4">
+        <div class="d-flex justify-content-center align-items-center flex-wrap gap-2">
+            <span class="badge bg-secondary fs-6 p-3 shadow-sm">MovieLens 32M</span>
+            <span class="fs-4 fw-bold text-muted">→</span>
+            <span class="badge bg-info text-dark fs-6 p-3 shadow-sm">HDFS (Hadoop)</span>
+            <span class="fs-4 fw-bold text-muted">→</span>
+            <span class="badge bg-primary fs-6 p-3 shadow-sm">Spark DataFrame</span>
+            <span class="fs-4 fw-bold text-muted">→</span>
+            <span class="badge bg-warning text-dark fs-6 p-3 shadow-sm">Tiền xử lý & EDA</span>
+            <span class="fs-4 fw-bold text-muted">→</span>
+            <span class="badge bg-success fs-6 p-3 shadow-sm">ALS Model</span>
+            <span class="fs-4 fw-bold text-muted">→</span>
+            <span class="badge bg-dark fs-6 p-3 shadow-sm">Web Demo</span>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <!-- Model Info -->
+    <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-white">
+                <h4 class="mb-0">Thông tin mô hình ALS</h4>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-warning" role="alert">
+                    <strong>Lưu ý:</strong> Demo đang sử dụng mô hình trên tập SAMPLE (10,000/200,948 users).
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Tham số (rank, maxIter, regParam)
+                        <span>rank={{ model.rank | default('10') }}, maxIter={{ model.maxIter | default('10') }}, regParam={{ model.regParam | default('0.1') }}</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        RMSE
+                        <span class="badge bg-primary rounded-pill">{{ model.rmse | default('N/A') }}</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        MAE
+                        <span class="badge bg-info rounded-pill">{{ model.mae | default('N/A') }}</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Coverage
+                        <span class="badge bg-success rounded-pill">{{ model.coverage | default('N/A') }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ranking Comparison -->
+    <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-white">
+                <h4 class="mb-0">So sánh phương pháp (Top-10)</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Phương pháp</th>
+                                <th>P@10</th>
+                                <th>R@10</th>
+                                <th>HitRate@10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for r in ranking %}
+                            <tr class="{% if 'Popularity' in r.method %}table-warning{% endif %}">
+                                <td>{{ r.method }}</td>
+                                <td>{{ r.p10 }}</td>
+                                <td>{{ r.r10 }}</td>
+                                <td>{{ r.hr10 }}</td>
+                            </tr>
+                            {% else %}
+                            <tr class="table-warning">
+                                <td>Popularity Baseline</td>
+                                <td>0.12</td>
+                                <td>0.08</td>
+                                <td>0.45</td>
+                            </tr>
+                            <tr>
+                                <td>ALS Model</td>
+                                <td>0.09</td>
+                                <td>0.05</td>
+                                <td>0.30</td>
+                            </tr>
+                            <tr>
+                                <td>ALS Reranked</td>
+                                <td>0.10</td>
+                                <td>0.06</td>
+                                <td>0.35</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-muted small mb-0 mt-3">
+                    * Trong tập mẫu SAMPLE hiện tại, Popularity baseline đang tốt hơn ALS. Cần chạy kiểm thử trên toàn bộ dữ liệu (Confirmatory test) để có kết quả chính xác hơn.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

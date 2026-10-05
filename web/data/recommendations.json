@@ -1,0 +1,1842 @@
+{
+  "806": [
+    {
+      "movieId": 318,
+      "title": "Shawshank Redemption, The (1994)",
+      "genres": "Crime|Drama",
+      "prediction": 4.8,
+      "adjusted_score": 4.7994,
+      "train_support": 98732,
+      "rank": 1
+    },
+    {
+      "movieId": 356,
+      "title": "Forrest Gump (1994)",
+      "genres": "Comedy|Drama|Romance|War",
+      "prediction": 4.72,
+      "adjusted_score": 4.7194,
+      "train_support": 102929,
+      "rank": 2
+    },
+    {
+      "movieId": 296,
+      "title": "Pulp Fiction (1994)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.64,
+      "adjusted_score": 4.6394,
+      "train_support": 96231,
+      "rank": 3
+    },
+    {
+      "movieId": 593,
+      "title": "Silence of the Lambs, The (1991)",
+      "genres": "Crime|Horror|Thriller",
+      "prediction": 4.56,
+      "adjusted_score": 4.5594,
+      "train_support": 87955,
+      "rank": 4
+    },
+    {
+      "movieId": 2571,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "prediction": 4.48,
+      "adjusted_score": 4.4794,
+      "train_support": 84520,
+      "rank": 5
+    },
+    {
+      "movieId": 260,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.4,
+      "adjusted_score": 4.3995,
+      "train_support": 81896,
+      "rank": 6
+    },
+    {
+      "movieId": 858,
+      "title": "Godfather, The (1972)",
+      "genres": "Crime|Drama",
+      "prediction": 4.32,
+      "adjusted_score": 4.3194,
+      "train_support": 68340,
+      "rank": 7
+    },
+    {
+      "movieId": 2959,
+      "title": "Fight Club (1999)",
+      "genres": "Action|Crime|Drama|Thriller",
+      "prediction": 4.24,
+      "adjusted_score": 4.2395,
+      "train_support": 67245,
+      "rank": 8
+    },
+    {
+      "movieId": 1196,
+      "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.16,
+      "adjusted_score": 4.1595,
+      "train_support": 65822,
+      "rank": 9
+    },
+    {
+      "movieId": 4993,
+      "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.08,
+      "adjusted_score": 4.0796,
+      "train_support": 64188,
+      "rank": 10
+    }
+  ],
+  "9770": [
+    {
+      "movieId": 593,
+      "title": "Silence of the Lambs, The (1991)",
+      "genres": "Crime|Horror|Thriller",
+      "prediction": 4.82,
+      "adjusted_score": 4.8193,
+      "train_support": 87955,
+      "rank": 1
+    },
+    {
+      "movieId": 2571,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "prediction": 4.74,
+      "adjusted_score": 4.7393,
+      "train_support": 84520,
+      "rank": 2
+    },
+    {
+      "movieId": 260,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.66,
+      "adjusted_score": 4.6593,
+      "train_support": 81896,
+      "rank": 3
+    },
+    {
+      "movieId": 858,
+      "title": "Godfather, The (1972)",
+      "genres": "Crime|Drama",
+      "prediction": 4.58,
+      "adjusted_score": 4.5792,
+      "train_support": 68340,
+      "rank": 4
+    },
+    {
+      "movieId": 2959,
+      "title": "Fight Club (1999)",
+      "genres": "Action|Crime|Drama|Thriller",
+      "prediction": 4.5,
+      "adjusted_score": 4.4993,
+      "train_support": 67245,
+      "rank": 5
+    },
+    {
+      "movieId": 1196,
+      "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.42,
+      "adjusted_score": 4.4193,
+      "train_support": 65822,
+      "rank": 6
+    },
+    {
+      "movieId": 4993,
+      "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.34,
+      "adjusted_score": 4.3394,
+      "train_support": 64188,
+      "rank": 7
+    },
+    {
+      "movieId": 50,
+      "title": "Usual Suspects, The (1995)",
+      "genres": "Crime|Mystery|Thriller",
+      "prediction": 4.26,
+      "adjusted_score": 4.2594,
+      "train_support": 62180,
+      "rank": 8
+    },
+    {
+      "movieId": 7153,
+      "title": "Lord of the Rings: The Return of the King, The (2003)",
+      "genres": "Action|Adventure|Drama|Fantasy",
+      "prediction": 4.18,
+      "adjusted_score": 4.1795,
+      "train_support": 59210,
+      "rank": 9
+    },
+    {
+      "movieId": 1198,
+      "title": "Raiders of the Lost Ark (Indiana Jones) (1981)",
+      "genres": "Action|Adventure",
+      "prediction": 4.1,
+      "adjusted_score": 4.0995,
+      "train_support": 58432,
+      "rank": 10
+    }
+  ],
+  "13769": [
+    {
+      "movieId": 858,
+      "title": "Godfather, The (1972)",
+      "genres": "Crime|Drama",
+      "prediction": 4.84,
+      "adjusted_score": 4.8391,
+      "train_support": 68340,
+      "rank": 1
+    },
+    {
+      "movieId": 2959,
+      "title": "Fight Club (1999)",
+      "genres": "Action|Crime|Drama|Thriller",
+      "prediction": 4.76,
+      "adjusted_score": 4.7591,
+      "train_support": 67245,
+      "rank": 2
+    },
+    {
+      "movieId": 1196,
+      "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.68,
+      "adjusted_score": 4.6791,
+      "train_support": 65822,
+      "rank": 3
+    },
+    {
+      "movieId": 4993,
+      "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.6,
+      "adjusted_score": 4.5992,
+      "train_support": 64188,
+      "rank": 4
+    },
+    {
+      "movieId": 50,
+      "title": "Usual Suspects, The (1995)",
+      "genres": "Crime|Mystery|Thriller",
+      "prediction": 4.52,
+      "adjusted_score": 4.5192,
+      "train_support": 62180,
+      "rank": 5
+    },
+    {
+      "movieId": 7153,
+      "title": "Lord of the Rings: The Return of the King, The (2003)",
+      "genres": "Action|Adventure|Drama|Fantasy",
+      "prediction": 4.44,
+      "adjusted_score": 4.4392,
+      "train_support": 59210,
+      "rank": 6
+    },
+    {
+      "movieId": 1198,
+      "title": "Raiders of the Lost Ark (Indiana Jones) (1981)",
+      "genres": "Action|Adventure",
+      "prediction": 4.36,
+      "adjusted_score": 4.3593,
+      "train_support": 58432,
+      "rank": 7
+    },
+    {
+      "movieId": 5952,
+      "title": "Lord of the Rings: The Two Towers, The (2002)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.28,
+      "adjusted_score": 4.2794,
+      "train_support": 57640,
+      "rank": 8
+    },
+    {
+      "movieId": 527,
+      "title": "Schindlers List (1993)",
+      "genres": "Drama|War",
+      "prediction": 4.2,
+      "adjusted_score": 4.1994,
+      "train_support": 56120,
+      "rank": 9
+    },
+    {
+      "movieId": 1210,
+      "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.12,
+      "adjusted_score": 4.1195,
+      "train_support": 55890,
+      "rank": 10
+    }
+  ],
+  "54836": [
+    {
+      "movieId": 4993,
+      "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.86,
+      "adjusted_score": 4.859,
+      "train_support": 64188,
+      "rank": 1
+    },
+    {
+      "movieId": 50,
+      "title": "Usual Suspects, The (1995)",
+      "genres": "Crime|Mystery|Thriller",
+      "prediction": 4.78,
+      "adjusted_score": 4.779,
+      "train_support": 62180,
+      "rank": 2
+    },
+    {
+      "movieId": 7153,
+      "title": "Lord of the Rings: The Return of the King, The (2003)",
+      "genres": "Action|Adventure|Drama|Fantasy",
+      "prediction": 4.7,
+      "adjusted_score": 4.699,
+      "train_support": 59210,
+      "rank": 3
+    },
+    {
+      "movieId": 1198,
+      "title": "Raiders of the Lost Ark (Indiana Jones) (1981)",
+      "genres": "Action|Adventure",
+      "prediction": 4.62,
+      "adjusted_score": 4.6191,
+      "train_support": 58432,
+      "rank": 4
+    },
+    {
+      "movieId": 5952,
+      "title": "Lord of the Rings: The Two Towers, The (2002)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.54,
+      "adjusted_score": 4.5391,
+      "train_support": 57640,
+      "rank": 5
+    },
+    {
+      "movieId": 527,
+      "title": "Schindlers List (1993)",
+      "genres": "Drama|War",
+      "prediction": 4.46,
+      "adjusted_score": 4.4592,
+      "train_support": 56120,
+      "rank": 6
+    },
+    {
+      "movieId": 1210,
+      "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.38,
+      "adjusted_score": 4.3793,
+      "train_support": 55890,
+      "rank": 7
+    },
+    {
+      "movieId": 110,
+      "title": "Braveheart (1995)",
+      "genres": "Action|Drama|War",
+      "prediction": 4.3,
+      "adjusted_score": 4.2994,
+      "train_support": 68005,
+      "rank": 8
+    },
+    {
+      "movieId": 589,
+      "title": "Terminator 2: Judgment Day (1991)",
+      "genres": "Action|Sci-Fi",
+      "prediction": 4.22,
+      "adjusted_score": 4.2195,
+      "train_support": 67011,
+      "rank": 9
+    },
+    {
+      "movieId": 1,
+      "title": "Toy Story (1995)",
+      "genres": "Adventure|Animation|Children|Comedy|Fantasy",
+      "prediction": 4.14,
+      "adjusted_score": 4.1395,
+      "train_support": 57342,
+      "rank": 10
+    }
+  ],
+  "56041": [
+    {
+      "movieId": 1198,
+      "title": "Raiders of the Lost Ark (Indiana Jones) (1981)",
+      "genres": "Action|Adventure",
+      "prediction": 4.88,
+      "adjusted_score": 4.8789,
+      "train_support": 58432,
+      "rank": 1
+    },
+    {
+      "movieId": 5952,
+      "title": "Lord of the Rings: The Two Towers, The (2002)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.8,
+      "adjusted_score": 4.7989,
+      "train_support": 57640,
+      "rank": 2
+    },
+    {
+      "movieId": 527,
+      "title": "Schindlers List (1993)",
+      "genres": "Drama|War",
+      "prediction": 4.72,
+      "adjusted_score": 4.719,
+      "train_support": 56120,
+      "rank": 3
+    },
+    {
+      "movieId": 1210,
+      "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.64,
+      "adjusted_score": 4.639,
+      "train_support": 55890,
+      "rank": 4
+    },
+    {
+      "movieId": 110,
+      "title": "Braveheart (1995)",
+      "genres": "Action|Drama|War",
+      "prediction": 4.56,
+      "adjusted_score": 4.5593,
+      "train_support": 68005,
+      "rank": 5
+    },
+    {
+      "movieId": 589,
+      "title": "Terminator 2: Judgment Day (1991)",
+      "genres": "Action|Sci-Fi",
+      "prediction": 4.48,
+      "adjusted_score": 4.4793,
+      "train_support": 67011,
+      "rank": 6
+    },
+    {
+      "movieId": 1,
+      "title": "Toy Story (1995)",
+      "genres": "Adventure|Animation|Children|Comedy|Fantasy",
+      "prediction": 4.4,
+      "adjusted_score": 4.3993,
+      "train_support": 57342,
+      "rank": 7
+    },
+    {
+      "movieId": 480,
+      "title": "Jurassic Park (1993)",
+      "genres": "Action|Adventure|Sci-Fi|Thriller",
+      "prediction": 4.32,
+      "adjusted_score": 4.3195,
+      "train_support": 76451,
+      "rank": 8
+    },
+    {
+      "movieId": 608,
+      "title": "Fargo (1996)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.24,
+      "adjusted_score": 4.2394,
+      "train_support": 54200,
+      "rank": 9
+    },
+    {
+      "movieId": 1221,
+      "title": "Godfather: Part II, The (1974)",
+      "genres": "Crime|Drama",
+      "prediction": 4.16,
+      "adjusted_score": 4.1594,
+      "train_support": 48900,
+      "rank": 10
+    }
+  ],
+  "71795": [
+    {
+      "movieId": 1210,
+      "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.8,
+      "adjusted_score": 4.7989,
+      "train_support": 55890,
+      "rank": 1
+    },
+    {
+      "movieId": 110,
+      "title": "Braveheart (1995)",
+      "genres": "Action|Drama|War",
+      "prediction": 4.72,
+      "adjusted_score": 4.7191,
+      "train_support": 68005,
+      "rank": 2
+    },
+    {
+      "movieId": 589,
+      "title": "Terminator 2: Judgment Day (1991)",
+      "genres": "Action|Sci-Fi",
+      "prediction": 4.64,
+      "adjusted_score": 4.6392,
+      "train_support": 67011,
+      "rank": 3
+    },
+    {
+      "movieId": 1,
+      "title": "Toy Story (1995)",
+      "genres": "Adventure|Animation|Children|Comedy|Fantasy",
+      "prediction": 4.56,
+      "adjusted_score": 4.5591,
+      "train_support": 57342,
+      "rank": 4
+    },
+    {
+      "movieId": 480,
+      "title": "Jurassic Park (1993)",
+      "genres": "Action|Adventure|Sci-Fi|Thriller",
+      "prediction": 4.48,
+      "adjusted_score": 4.4794,
+      "train_support": 76451,
+      "rank": 5
+    },
+    {
+      "movieId": 608,
+      "title": "Fargo (1996)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.4,
+      "adjusted_score": 4.3992,
+      "train_support": 54200,
+      "rank": 6
+    },
+    {
+      "movieId": 1221,
+      "title": "Godfather: Part II, The (1974)",
+      "genres": "Crime|Drama",
+      "prediction": 4.32,
+      "adjusted_score": 4.3192,
+      "train_support": 48900,
+      "rank": 7
+    },
+    {
+      "movieId": 2858,
+      "title": "American Beauty (1999)",
+      "genres": "Drama|Romance",
+      "prediction": 4.24,
+      "adjusted_score": 4.2393,
+      "train_support": 52100,
+      "rank": 8
+    },
+    {
+      "movieId": 47,
+      "title": "Seven (a.k.a. Se7en) (1995)",
+      "genres": "Mystery|Thriller",
+      "prediction": 4.16,
+      "adjusted_score": 4.1594,
+      "train_support": 51900,
+      "rank": 9
+    },
+    {
+      "movieId": 1213,
+      "title": "Goodfellas (1990)",
+      "genres": "Crime|Drama",
+      "prediction": 4.08,
+      "adjusted_score": 4.0794,
+      "train_support": 45200,
+      "rank": 10
+    }
+  ],
+  "100346": [
+    {
+      "movieId": 1,
+      "title": "Toy Story (1995)",
+      "genres": "Adventure|Animation|Children|Comedy|Fantasy",
+      "prediction": 4.82,
+      "adjusted_score": 4.8189,
+      "train_support": 57342,
+      "rank": 1
+    },
+    {
+      "movieId": 480,
+      "title": "Jurassic Park (1993)",
+      "genres": "Action|Adventure|Sci-Fi|Thriller",
+      "prediction": 4.74,
+      "adjusted_score": 4.7392,
+      "train_support": 76451,
+      "rank": 2
+    },
+    {
+      "movieId": 608,
+      "title": "Fargo (1996)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.66,
+      "adjusted_score": 4.659,
+      "train_support": 54200,
+      "rank": 3
+    },
+    {
+      "movieId": 1221,
+      "title": "Godfather: Part II, The (1974)",
+      "genres": "Crime|Drama",
+      "prediction": 4.58,
+      "adjusted_score": 4.5789,
+      "train_support": 48900,
+      "rank": 4
+    },
+    {
+      "movieId": 2858,
+      "title": "American Beauty (1999)",
+      "genres": "Drama|Romance",
+      "prediction": 4.5,
+      "adjusted_score": 4.4991,
+      "train_support": 52100,
+      "rank": 5
+    },
+    {
+      "movieId": 47,
+      "title": "Seven (a.k.a. Se7en) (1995)",
+      "genres": "Mystery|Thriller",
+      "prediction": 4.42,
+      "adjusted_score": 4.4192,
+      "train_support": 51900,
+      "rank": 6
+    },
+    {
+      "movieId": 1213,
+      "title": "Goodfellas (1990)",
+      "genres": "Crime|Drama",
+      "prediction": 4.34,
+      "adjusted_score": 4.3391,
+      "train_support": 45200,
+      "rank": 7
+    },
+    {
+      "movieId": 318,
+      "title": "Shawshank Redemption, The (1994)",
+      "genres": "Crime|Drama",
+      "prediction": 4.26,
+      "adjusted_score": 4.2596,
+      "train_support": 98732,
+      "rank": 8
+    },
+    {
+      "movieId": 356,
+      "title": "Forrest Gump (1994)",
+      "genres": "Comedy|Drama|Romance|War",
+      "prediction": 4.18,
+      "adjusted_score": 4.1797,
+      "train_support": 102929,
+      "rank": 9
+    },
+    {
+      "movieId": 296,
+      "title": "Pulp Fiction (1994)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.1,
+      "adjusted_score": 4.0997,
+      "train_support": 96231,
+      "rank": 10
+    }
+  ],
+  "103252": [
+    {
+      "movieId": 1221,
+      "title": "Godfather: Part II, The (1974)",
+      "genres": "Crime|Drama",
+      "prediction": 4.84,
+      "adjusted_score": 4.8387,
+      "train_support": 48900,
+      "rank": 1
+    },
+    {
+      "movieId": 2858,
+      "title": "American Beauty (1999)",
+      "genres": "Drama|Romance",
+      "prediction": 4.76,
+      "adjusted_score": 4.7588,
+      "train_support": 52100,
+      "rank": 2
+    },
+    {
+      "movieId": 47,
+      "title": "Seven (a.k.a. Se7en) (1995)",
+      "genres": "Mystery|Thriller",
+      "prediction": 4.68,
+      "adjusted_score": 4.6789,
+      "train_support": 51900,
+      "rank": 3
+    },
+    {
+      "movieId": 1213,
+      "title": "Goodfellas (1990)",
+      "genres": "Crime|Drama",
+      "prediction": 4.6,
+      "adjusted_score": 4.5988,
+      "train_support": 45200,
+      "rank": 4
+    },
+    {
+      "movieId": 318,
+      "title": "Shawshank Redemption, The (1994)",
+      "genres": "Crime|Drama",
+      "prediction": 4.52,
+      "adjusted_score": 4.5195,
+      "train_support": 98732,
+      "rank": 5
+    },
+    {
+      "movieId": 356,
+      "title": "Forrest Gump (1994)",
+      "genres": "Comedy|Drama|Romance|War",
+      "prediction": 4.44,
+      "adjusted_score": 4.4396,
+      "train_support": 102929,
+      "rank": 6
+    },
+    {
+      "movieId": 296,
+      "title": "Pulp Fiction (1994)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.36,
+      "adjusted_score": 4.3596,
+      "train_support": 96231,
+      "rank": 7
+    },
+    {
+      "movieId": 593,
+      "title": "Silence of the Lambs, The (1991)",
+      "genres": "Crime|Horror|Thriller",
+      "prediction": 4.28,
+      "adjusted_score": 4.2796,
+      "train_support": 87955,
+      "rank": 8
+    },
+    {
+      "movieId": 2571,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "prediction": 4.2,
+      "adjusted_score": 4.1996,
+      "train_support": 84520,
+      "rank": 9
+    },
+    {
+      "movieId": 260,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.12,
+      "adjusted_score": 4.1196,
+      "train_support": 81896,
+      "rank": 10
+    }
+  ],
+  "103269": [
+    {
+      "movieId": 1213,
+      "title": "Goodfellas (1990)",
+      "genres": "Crime|Drama",
+      "prediction": 4.86,
+      "adjusted_score": 4.8585,
+      "train_support": 45200,
+      "rank": 1
+    },
+    {
+      "movieId": 318,
+      "title": "Shawshank Redemption, The (1994)",
+      "genres": "Crime|Drama",
+      "prediction": 4.78,
+      "adjusted_score": 4.7794,
+      "train_support": 98732,
+      "rank": 2
+    },
+    {
+      "movieId": 356,
+      "title": "Forrest Gump (1994)",
+      "genres": "Comedy|Drama|Romance|War",
+      "prediction": 4.7,
+      "adjusted_score": 4.6994,
+      "train_support": 102929,
+      "rank": 3
+    },
+    {
+      "movieId": 296,
+      "title": "Pulp Fiction (1994)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.62,
+      "adjusted_score": 4.6194,
+      "train_support": 96231,
+      "rank": 4
+    },
+    {
+      "movieId": 593,
+      "title": "Silence of the Lambs, The (1991)",
+      "genres": "Crime|Horror|Thriller",
+      "prediction": 4.54,
+      "adjusted_score": 4.5394,
+      "train_support": 87955,
+      "rank": 5
+    },
+    {
+      "movieId": 2571,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "prediction": 4.46,
+      "adjusted_score": 4.4595,
+      "train_support": 84520,
+      "rank": 6
+    },
+    {
+      "movieId": 260,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.38,
+      "adjusted_score": 4.3795,
+      "train_support": 81896,
+      "rank": 7
+    },
+    {
+      "movieId": 858,
+      "title": "Godfather, The (1972)",
+      "genres": "Crime|Drama",
+      "prediction": 4.3,
+      "adjusted_score": 4.2994,
+      "train_support": 68340,
+      "rank": 8
+    },
+    {
+      "movieId": 2959,
+      "title": "Fight Club (1999)",
+      "genres": "Action|Crime|Drama|Thriller",
+      "prediction": 4.22,
+      "adjusted_score": 4.2195,
+      "train_support": 67245,
+      "rank": 9
+    },
+    {
+      "movieId": 1196,
+      "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.14,
+      "adjusted_score": 4.1395,
+      "train_support": 65822,
+      "rank": 10
+    }
+  ],
+  "108505": [
+    {
+      "movieId": 296,
+      "title": "Pulp Fiction (1994)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.88,
+      "adjusted_score": 4.8793,
+      "train_support": 96231,
+      "rank": 1
+    },
+    {
+      "movieId": 593,
+      "title": "Silence of the Lambs, The (1991)",
+      "genres": "Crime|Horror|Thriller",
+      "prediction": 4.8,
+      "adjusted_score": 4.7993,
+      "train_support": 87955,
+      "rank": 2
+    },
+    {
+      "movieId": 2571,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "prediction": 4.72,
+      "adjusted_score": 4.7193,
+      "train_support": 84520,
+      "rank": 3
+    },
+    {
+      "movieId": 260,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.64,
+      "adjusted_score": 4.6393,
+      "train_support": 81896,
+      "rank": 4
+    },
+    {
+      "movieId": 858,
+      "title": "Godfather, The (1972)",
+      "genres": "Crime|Drama",
+      "prediction": 4.56,
+      "adjusted_score": 4.5593,
+      "train_support": 68340,
+      "rank": 5
+    },
+    {
+      "movieId": 2959,
+      "title": "Fight Club (1999)",
+      "genres": "Action|Crime|Drama|Thriller",
+      "prediction": 4.48,
+      "adjusted_score": 4.4793,
+      "train_support": 67245,
+      "rank": 6
+    },
+    {
+      "movieId": 1196,
+      "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.4,
+      "adjusted_score": 4.3993,
+      "train_support": 65822,
+      "rank": 7
+    },
+    {
+      "movieId": 4993,
+      "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.32,
+      "adjusted_score": 4.3194,
+      "train_support": 64188,
+      "rank": 8
+    },
+    {
+      "movieId": 50,
+      "title": "Usual Suspects, The (1995)",
+      "genres": "Crime|Mystery|Thriller",
+      "prediction": 4.24,
+      "adjusted_score": 4.2394,
+      "train_support": 62180,
+      "rank": 9
+    },
+    {
+      "movieId": 7153,
+      "title": "Lord of the Rings: The Return of the King, The (2003)",
+      "genres": "Action|Adventure|Drama|Fantasy",
+      "prediction": 4.16,
+      "adjusted_score": 4.1595,
+      "train_support": 59210,
+      "rank": 10
+    }
+  ],
+  "113006": [
+    {
+      "movieId": 260,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.8,
+      "adjusted_score": 4.7992,
+      "train_support": 81896,
+      "rank": 1
+    },
+    {
+      "movieId": 858,
+      "title": "Godfather, The (1972)",
+      "genres": "Crime|Drama",
+      "prediction": 4.72,
+      "adjusted_score": 4.7191,
+      "train_support": 68340,
+      "rank": 2
+    },
+    {
+      "movieId": 2959,
+      "title": "Fight Club (1999)",
+      "genres": "Action|Crime|Drama|Thriller",
+      "prediction": 4.64,
+      "adjusted_score": 4.6392,
+      "train_support": 67245,
+      "rank": 3
+    },
+    {
+      "movieId": 1196,
+      "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.56,
+      "adjusted_score": 4.5592,
+      "train_support": 65822,
+      "rank": 4
+    },
+    {
+      "movieId": 4993,
+      "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.48,
+      "adjusted_score": 4.4793,
+      "train_support": 64188,
+      "rank": 5
+    },
+    {
+      "movieId": 50,
+      "title": "Usual Suspects, The (1995)",
+      "genres": "Crime|Mystery|Thriller",
+      "prediction": 4.4,
+      "adjusted_score": 4.3993,
+      "train_support": 62180,
+      "rank": 6
+    },
+    {
+      "movieId": 7153,
+      "title": "Lord of the Rings: The Return of the King, The (2003)",
+      "genres": "Action|Adventure|Drama|Fantasy",
+      "prediction": 4.32,
+      "adjusted_score": 4.3193,
+      "train_support": 59210,
+      "rank": 7
+    },
+    {
+      "movieId": 1198,
+      "title": "Raiders of the Lost Ark (Indiana Jones) (1981)",
+      "genres": "Action|Adventure",
+      "prediction": 4.24,
+      "adjusted_score": 4.2394,
+      "train_support": 58432,
+      "rank": 8
+    },
+    {
+      "movieId": 5952,
+      "title": "Lord of the Rings: The Two Towers, The (2002)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.16,
+      "adjusted_score": 4.1595,
+      "train_support": 57640,
+      "rank": 9
+    },
+    {
+      "movieId": 527,
+      "title": "Schindlers List (1993)",
+      "genres": "Drama|War",
+      "prediction": 4.08,
+      "adjusted_score": 4.0795,
+      "train_support": 56120,
+      "rank": 10
+    }
+  ],
+  "115392": [
+    {
+      "movieId": 1196,
+      "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.82,
+      "adjusted_score": 4.819,
+      "train_support": 65822,
+      "rank": 1
+    },
+    {
+      "movieId": 4993,
+      "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.74,
+      "adjusted_score": 4.7391,
+      "train_support": 64188,
+      "rank": 2
+    },
+    {
+      "movieId": 50,
+      "title": "Usual Suspects, The (1995)",
+      "genres": "Crime|Mystery|Thriller",
+      "prediction": 4.66,
+      "adjusted_score": 4.6591,
+      "train_support": 62180,
+      "rank": 3
+    },
+    {
+      "movieId": 7153,
+      "title": "Lord of the Rings: The Return of the King, The (2003)",
+      "genres": "Action|Adventure|Drama|Fantasy",
+      "prediction": 4.58,
+      "adjusted_score": 4.5791,
+      "train_support": 59210,
+      "rank": 4
+    },
+    {
+      "movieId": 1198,
+      "title": "Raiders of the Lost Ark (Indiana Jones) (1981)",
+      "genres": "Action|Adventure",
+      "prediction": 4.5,
+      "adjusted_score": 4.4992,
+      "train_support": 58432,
+      "rank": 5
+    },
+    {
+      "movieId": 5952,
+      "title": "Lord of the Rings: The Two Towers, The (2002)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.42,
+      "adjusted_score": 4.4192,
+      "train_support": 57640,
+      "rank": 6
+    },
+    {
+      "movieId": 527,
+      "title": "Schindlers List (1993)",
+      "genres": "Drama|War",
+      "prediction": 4.34,
+      "adjusted_score": 4.3393,
+      "train_support": 56120,
+      "rank": 7
+    },
+    {
+      "movieId": 1210,
+      "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.26,
+      "adjusted_score": 4.2594,
+      "train_support": 55890,
+      "rank": 8
+    },
+    {
+      "movieId": 110,
+      "title": "Braveheart (1995)",
+      "genres": "Action|Drama|War",
+      "prediction": 4.18,
+      "adjusted_score": 4.1795,
+      "train_support": 68005,
+      "rank": 9
+    },
+    {
+      "movieId": 589,
+      "title": "Terminator 2: Judgment Day (1991)",
+      "genres": "Action|Sci-Fi",
+      "prediction": 4.1,
+      "adjusted_score": 4.0996,
+      "train_support": 67011,
+      "rank": 10
+    }
+  ],
+  "126896": [
+    {
+      "movieId": 7153,
+      "title": "Lord of the Rings: The Return of the King, The (2003)",
+      "genres": "Action|Adventure|Drama|Fantasy",
+      "prediction": 4.84,
+      "adjusted_score": 4.8389,
+      "train_support": 59210,
+      "rank": 1
+    },
+    {
+      "movieId": 1198,
+      "title": "Raiders of the Lost Ark (Indiana Jones) (1981)",
+      "genres": "Action|Adventure",
+      "prediction": 4.76,
+      "adjusted_score": 4.759,
+      "train_support": 58432,
+      "rank": 2
+    },
+    {
+      "movieId": 5952,
+      "title": "Lord of the Rings: The Two Towers, The (2002)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.68,
+      "adjusted_score": 4.679,
+      "train_support": 57640,
+      "rank": 3
+    },
+    {
+      "movieId": 527,
+      "title": "Schindlers List (1993)",
+      "genres": "Drama|War",
+      "prediction": 4.6,
+      "adjusted_score": 4.5991,
+      "train_support": 56120,
+      "rank": 4
+    },
+    {
+      "movieId": 1210,
+      "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.52,
+      "adjusted_score": 4.5191,
+      "train_support": 55890,
+      "rank": 5
+    },
+    {
+      "movieId": 110,
+      "title": "Braveheart (1995)",
+      "genres": "Action|Drama|War",
+      "prediction": 4.44,
+      "adjusted_score": 4.4393,
+      "train_support": 68005,
+      "rank": 6
+    },
+    {
+      "movieId": 589,
+      "title": "Terminator 2: Judgment Day (1991)",
+      "genres": "Action|Sci-Fi",
+      "prediction": 4.36,
+      "adjusted_score": 4.3594,
+      "train_support": 67011,
+      "rank": 7
+    },
+    {
+      "movieId": 1,
+      "title": "Toy Story (1995)",
+      "genres": "Adventure|Animation|Children|Comedy|Fantasy",
+      "prediction": 4.28,
+      "adjusted_score": 4.2794,
+      "train_support": 57342,
+      "rank": 8
+    },
+    {
+      "movieId": 480,
+      "title": "Jurassic Park (1993)",
+      "genres": "Action|Adventure|Sci-Fi|Thriller",
+      "prediction": 4.2,
+      "adjusted_score": 4.1996,
+      "train_support": 76451,
+      "rank": 9
+    },
+    {
+      "movieId": 608,
+      "title": "Fargo (1996)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.12,
+      "adjusted_score": 4.1195,
+      "train_support": 54200,
+      "rank": 10
+    }
+  ],
+  "128517": [
+    {
+      "movieId": 527,
+      "title": "Schindlers List (1993)",
+      "genres": "Drama|War",
+      "prediction": 4.86,
+      "adjusted_score": 4.8588,
+      "train_support": 56120,
+      "rank": 1
+    },
+    {
+      "movieId": 1210,
+      "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.78,
+      "adjusted_score": 4.7789,
+      "train_support": 55890,
+      "rank": 2
+    },
+    {
+      "movieId": 110,
+      "title": "Braveheart (1995)",
+      "genres": "Action|Drama|War",
+      "prediction": 4.7,
+      "adjusted_score": 4.6992,
+      "train_support": 68005,
+      "rank": 3
+    },
+    {
+      "movieId": 589,
+      "title": "Terminator 2: Judgment Day (1991)",
+      "genres": "Action|Sci-Fi",
+      "prediction": 4.62,
+      "adjusted_score": 4.6192,
+      "train_support": 67011,
+      "rank": 4
+    },
+    {
+      "movieId": 1,
+      "title": "Toy Story (1995)",
+      "genres": "Adventure|Animation|Children|Comedy|Fantasy",
+      "prediction": 4.54,
+      "adjusted_score": 4.5391,
+      "train_support": 57342,
+      "rank": 5
+    },
+    {
+      "movieId": 480,
+      "title": "Jurassic Park (1993)",
+      "genres": "Action|Adventure|Sci-Fi|Thriller",
+      "prediction": 4.46,
+      "adjusted_score": 4.4594,
+      "train_support": 76451,
+      "rank": 6
+    },
+    {
+      "movieId": 608,
+      "title": "Fargo (1996)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.38,
+      "adjusted_score": 4.3792,
+      "train_support": 54200,
+      "rank": 7
+    },
+    {
+      "movieId": 1221,
+      "title": "Godfather: Part II, The (1974)",
+      "genres": "Crime|Drama",
+      "prediction": 4.3,
+      "adjusted_score": 4.2992,
+      "train_support": 48900,
+      "rank": 8
+    },
+    {
+      "movieId": 2858,
+      "title": "American Beauty (1999)",
+      "genres": "Drama|Romance",
+      "prediction": 4.22,
+      "adjusted_score": 4.2194,
+      "train_support": 52100,
+      "rank": 9
+    },
+    {
+      "movieId": 47,
+      "title": "Seven (a.k.a. Se7en) (1995)",
+      "genres": "Mystery|Thriller",
+      "prediction": 4.14,
+      "adjusted_score": 4.1394,
+      "train_support": 51900,
+      "rank": 10
+    }
+  ],
+  "131122": [
+    {
+      "movieId": 589,
+      "title": "Terminator 2: Judgment Day (1991)",
+      "genres": "Action|Sci-Fi",
+      "prediction": 4.88,
+      "adjusted_score": 4.879,
+      "train_support": 67011,
+      "rank": 1
+    },
+    {
+      "movieId": 1,
+      "title": "Toy Story (1995)",
+      "genres": "Adventure|Animation|Children|Comedy|Fantasy",
+      "prediction": 4.8,
+      "adjusted_score": 4.7989,
+      "train_support": 57342,
+      "rank": 2
+    },
+    {
+      "movieId": 480,
+      "title": "Jurassic Park (1993)",
+      "genres": "Action|Adventure|Sci-Fi|Thriller",
+      "prediction": 4.72,
+      "adjusted_score": 4.7192,
+      "train_support": 76451,
+      "rank": 3
+    },
+    {
+      "movieId": 608,
+      "title": "Fargo (1996)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.64,
+      "adjusted_score": 4.639,
+      "train_support": 54200,
+      "rank": 4
+    },
+    {
+      "movieId": 1221,
+      "title": "Godfather: Part II, The (1974)",
+      "genres": "Crime|Drama",
+      "prediction": 4.56,
+      "adjusted_score": 4.559,
+      "train_support": 48900,
+      "rank": 5
+    },
+    {
+      "movieId": 2858,
+      "title": "American Beauty (1999)",
+      "genres": "Drama|Romance",
+      "prediction": 4.48,
+      "adjusted_score": 4.4791,
+      "train_support": 52100,
+      "rank": 6
+    },
+    {
+      "movieId": 47,
+      "title": "Seven (a.k.a. Se7en) (1995)",
+      "genres": "Mystery|Thriller",
+      "prediction": 4.4,
+      "adjusted_score": 4.3992,
+      "train_support": 51900,
+      "rank": 7
+    },
+    {
+      "movieId": 1213,
+      "title": "Goodfellas (1990)",
+      "genres": "Crime|Drama",
+      "prediction": 4.32,
+      "adjusted_score": 4.3191,
+      "train_support": 45200,
+      "rank": 8
+    },
+    {
+      "movieId": 318,
+      "title": "Shawshank Redemption, The (1994)",
+      "genres": "Crime|Drama",
+      "prediction": 4.24,
+      "adjusted_score": 4.2396,
+      "train_support": 98732,
+      "rank": 9
+    },
+    {
+      "movieId": 356,
+      "title": "Forrest Gump (1994)",
+      "genres": "Comedy|Drama|Romance|War",
+      "prediction": 4.16,
+      "adjusted_score": 4.1597,
+      "train_support": 102929,
+      "rank": 10
+    }
+  ],
+  "143637": [
+    {
+      "movieId": 608,
+      "title": "Fargo (1996)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.8,
+      "adjusted_score": 4.7988,
+      "train_support": 54200,
+      "rank": 1
+    },
+    {
+      "movieId": 1221,
+      "title": "Godfather: Part II, The (1974)",
+      "genres": "Crime|Drama",
+      "prediction": 4.72,
+      "adjusted_score": 4.7188,
+      "train_support": 48900,
+      "rank": 2
+    },
+    {
+      "movieId": 2858,
+      "title": "American Beauty (1999)",
+      "genres": "Drama|Romance",
+      "prediction": 4.64,
+      "adjusted_score": 4.6389,
+      "train_support": 52100,
+      "rank": 3
+    },
+    {
+      "movieId": 47,
+      "title": "Seven (a.k.a. Se7en) (1995)",
+      "genres": "Mystery|Thriller",
+      "prediction": 4.56,
+      "adjusted_score": 4.559,
+      "train_support": 51900,
+      "rank": 4
+    },
+    {
+      "movieId": 1213,
+      "title": "Goodfellas (1990)",
+      "genres": "Crime|Drama",
+      "prediction": 4.48,
+      "adjusted_score": 4.479,
+      "train_support": 45200,
+      "rank": 5
+    },
+    {
+      "movieId": 318,
+      "title": "Shawshank Redemption, The (1994)",
+      "genres": "Crime|Drama",
+      "prediction": 4.4,
+      "adjusted_score": 4.3996,
+      "train_support": 98732,
+      "rank": 6
+    },
+    {
+      "movieId": 356,
+      "title": "Forrest Gump (1994)",
+      "genres": "Comedy|Drama|Romance|War",
+      "prediction": 4.32,
+      "adjusted_score": 4.3196,
+      "train_support": 102929,
+      "rank": 7
+    },
+    {
+      "movieId": 296,
+      "title": "Pulp Fiction (1994)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.24,
+      "adjusted_score": 4.2396,
+      "train_support": 96231,
+      "rank": 8
+    },
+    {
+      "movieId": 593,
+      "title": "Silence of the Lambs, The (1991)",
+      "genres": "Crime|Horror|Thriller",
+      "prediction": 4.16,
+      "adjusted_score": 4.1596,
+      "train_support": 87955,
+      "rank": 9
+    },
+    {
+      "movieId": 2571,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "prediction": 4.08,
+      "adjusted_score": 4.0797,
+      "train_support": 84520,
+      "rank": 10
+    }
+  ],
+  "172400": [
+    {
+      "movieId": 47,
+      "title": "Seven (a.k.a. Se7en) (1995)",
+      "genres": "Mystery|Thriller",
+      "prediction": 4.82,
+      "adjusted_score": 4.8188,
+      "train_support": 51900,
+      "rank": 1
+    },
+    {
+      "movieId": 1213,
+      "title": "Goodfellas (1990)",
+      "genres": "Crime|Drama",
+      "prediction": 4.74,
+      "adjusted_score": 4.7387,
+      "train_support": 45200,
+      "rank": 2
+    },
+    {
+      "movieId": 318,
+      "title": "Shawshank Redemption, The (1994)",
+      "genres": "Crime|Drama",
+      "prediction": 4.66,
+      "adjusted_score": 4.6594,
+      "train_support": 98732,
+      "rank": 3
+    },
+    {
+      "movieId": 356,
+      "title": "Forrest Gump (1994)",
+      "genres": "Comedy|Drama|Romance|War",
+      "prediction": 4.58,
+      "adjusted_score": 4.5795,
+      "train_support": 102929,
+      "rank": 4
+    },
+    {
+      "movieId": 296,
+      "title": "Pulp Fiction (1994)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.5,
+      "adjusted_score": 4.4995,
+      "train_support": 96231,
+      "rank": 5
+    },
+    {
+      "movieId": 593,
+      "title": "Silence of the Lambs, The (1991)",
+      "genres": "Crime|Horror|Thriller",
+      "prediction": 4.42,
+      "adjusted_score": 4.4195,
+      "train_support": 87955,
+      "rank": 6
+    },
+    {
+      "movieId": 2571,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "prediction": 4.34,
+      "adjusted_score": 4.3395,
+      "train_support": 84520,
+      "rank": 7
+    },
+    {
+      "movieId": 260,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.26,
+      "adjusted_score": 4.2596,
+      "train_support": 81896,
+      "rank": 8
+    },
+    {
+      "movieId": 858,
+      "title": "Godfather, The (1972)",
+      "genres": "Crime|Drama",
+      "prediction": 4.18,
+      "adjusted_score": 4.1795,
+      "train_support": 68340,
+      "rank": 9
+    },
+    {
+      "movieId": 2959,
+      "title": "Fight Club (1999)",
+      "genres": "Action|Crime|Drama|Thriller",
+      "prediction": 4.1,
+      "adjusted_score": 4.0996,
+      "train_support": 67245,
+      "rank": 10
+    }
+  ],
+  "179925": [
+    {
+      "movieId": 356,
+      "title": "Forrest Gump (1994)",
+      "genres": "Comedy|Drama|Romance|War",
+      "prediction": 4.84,
+      "adjusted_score": 4.8394,
+      "train_support": 102929,
+      "rank": 1
+    },
+    {
+      "movieId": 296,
+      "title": "Pulp Fiction (1994)",
+      "genres": "Comedy|Crime|Drama|Thriller",
+      "prediction": 4.76,
+      "adjusted_score": 4.7594,
+      "train_support": 96231,
+      "rank": 2
+    },
+    {
+      "movieId": 593,
+      "title": "Silence of the Lambs, The (1991)",
+      "genres": "Crime|Horror|Thriller",
+      "prediction": 4.68,
+      "adjusted_score": 4.6794,
+      "train_support": 87955,
+      "rank": 3
+    },
+    {
+      "movieId": 2571,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "prediction": 4.6,
+      "adjusted_score": 4.5994,
+      "train_support": 84520,
+      "rank": 4
+    },
+    {
+      "movieId": 260,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.52,
+      "adjusted_score": 4.5194,
+      "train_support": 81896,
+      "rank": 5
+    },
+    {
+      "movieId": 858,
+      "title": "Godfather, The (1972)",
+      "genres": "Crime|Drama",
+      "prediction": 4.44,
+      "adjusted_score": 4.4393,
+      "train_support": 68340,
+      "rank": 6
+    },
+    {
+      "movieId": 2959,
+      "title": "Fight Club (1999)",
+      "genres": "Action|Crime|Drama|Thriller",
+      "prediction": 4.36,
+      "adjusted_score": 4.3594,
+      "train_support": 67245,
+      "rank": 7
+    },
+    {
+      "movieId": 1196,
+      "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.28,
+      "adjusted_score": 4.2794,
+      "train_support": 65822,
+      "rank": 8
+    },
+    {
+      "movieId": 4993,
+      "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.2,
+      "adjusted_score": 4.1995,
+      "train_support": 64188,
+      "rank": 9
+    },
+    {
+      "movieId": 50,
+      "title": "Usual Suspects, The (1995)",
+      "genres": "Crime|Mystery|Thriller",
+      "prediction": 4.12,
+      "adjusted_score": 4.1195,
+      "train_support": 62180,
+      "rank": 10
+    }
+  ],
+  "183649": [
+    {
+      "movieId": 2571,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "prediction": 4.86,
+      "adjusted_score": 4.8592,
+      "train_support": 84520,
+      "rank": 1
+    },
+    {
+      "movieId": 260,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.78,
+      "adjusted_score": 4.7792,
+      "train_support": 81896,
+      "rank": 2
+    },
+    {
+      "movieId": 858,
+      "title": "Godfather, The (1972)",
+      "genres": "Crime|Drama",
+      "prediction": 4.7,
+      "adjusted_score": 4.6992,
+      "train_support": 68340,
+      "rank": 3
+    },
+    {
+      "movieId": 2959,
+      "title": "Fight Club (1999)",
+      "genres": "Action|Crime|Drama|Thriller",
+      "prediction": 4.62,
+      "adjusted_score": 4.6192,
+      "train_support": 67245,
+      "rank": 4
+    },
+    {
+      "movieId": 1196,
+      "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.54,
+      "adjusted_score": 4.5392,
+      "train_support": 65822,
+      "rank": 5
+    },
+    {
+      "movieId": 4993,
+      "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.46,
+      "adjusted_score": 4.4593,
+      "train_support": 64188,
+      "rank": 6
+    },
+    {
+      "movieId": 50,
+      "title": "Usual Suspects, The (1995)",
+      "genres": "Crime|Mystery|Thriller",
+      "prediction": 4.38,
+      "adjusted_score": 4.3793,
+      "train_support": 62180,
+      "rank": 7
+    },
+    {
+      "movieId": 7153,
+      "title": "Lord of the Rings: The Return of the King, The (2003)",
+      "genres": "Action|Adventure|Drama|Fantasy",
+      "prediction": 4.3,
+      "adjusted_score": 4.2994,
+      "train_support": 59210,
+      "rank": 8
+    },
+    {
+      "movieId": 1198,
+      "title": "Raiders of the Lost Ark (Indiana Jones) (1981)",
+      "genres": "Action|Adventure",
+      "prediction": 4.22,
+      "adjusted_score": 4.2194,
+      "train_support": 58432,
+      "rank": 9
+    },
+    {
+      "movieId": 5952,
+      "title": "Lord of the Rings: The Two Towers, The (2002)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.14,
+      "adjusted_score": 4.1395,
+      "train_support": 57640,
+      "rank": 10
+    }
+  ],
+  "192892": [
+    {
+      "movieId": 2959,
+      "title": "Fight Club (1999)",
+      "genres": "Action|Crime|Drama|Thriller",
+      "prediction": 4.88,
+      "adjusted_score": 4.879,
+      "train_support": 67245,
+      "rank": 1
+    },
+    {
+      "movieId": 1196,
+      "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.8,
+      "adjusted_score": 4.799,
+      "train_support": 65822,
+      "rank": 2
+    },
+    {
+      "movieId": 4993,
+      "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.72,
+      "adjusted_score": 4.7191,
+      "train_support": 64188,
+      "rank": 3
+    },
+    {
+      "movieId": 50,
+      "title": "Usual Suspects, The (1995)",
+      "genres": "Crime|Mystery|Thriller",
+      "prediction": 4.64,
+      "adjusted_score": 4.6391,
+      "train_support": 62180,
+      "rank": 4
+    },
+    {
+      "movieId": 7153,
+      "title": "Lord of the Rings: The Return of the King, The (2003)",
+      "genres": "Action|Adventure|Drama|Fantasy",
+      "prediction": 4.56,
+      "adjusted_score": 4.5591,
+      "train_support": 59210,
+      "rank": 5
+    },
+    {
+      "movieId": 1198,
+      "title": "Raiders of the Lost Ark (Indiana Jones) (1981)",
+      "genres": "Action|Adventure",
+      "prediction": 4.48,
+      "adjusted_score": 4.4792,
+      "train_support": 58432,
+      "rank": 6
+    },
+    {
+      "movieId": 5952,
+      "title": "Lord of the Rings: The Two Towers, The (2002)",
+      "genres": "Adventure|Fantasy",
+      "prediction": 4.4,
+      "adjusted_score": 4.3993,
+      "train_support": 57640,
+      "rank": 7
+    },
+    {
+      "movieId": 527,
+      "title": "Schindlers List (1993)",
+      "genres": "Drama|War",
+      "prediction": 4.32,
+      "adjusted_score": 4.3193,
+      "train_support": 56120,
+      "rank": 8
+    },
+    {
+      "movieId": 1210,
+      "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+      "genres": "Action|Adventure|Sci-Fi",
+      "prediction": 4.24,
+      "adjusted_score": 4.2394,
+      "train_support": 55890,
+      "rank": 9
+    },
+    {
+      "movieId": 110,
+      "title": "Braveheart (1995)",
+      "genres": "Action|Drama|War",
+      "prediction": 4.16,
+      "adjusted_score": 4.1595,
+      "train_support": 68005,
+      "rank": 10
+    }
+  ]
+}

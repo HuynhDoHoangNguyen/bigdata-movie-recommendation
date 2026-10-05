@@ -1,0 +1,147 @@
+[
+  {
+    "year": 1995,
+    "rating_count": 1040000,
+    "average_rating": 3.4
+  },
+  {
+    "year": 1996,
+    "rating_count": 755000,
+    "average_rating": 3.45
+  },
+  {
+    "year": 1997,
+    "rating_count": 790000,
+    "average_rating": 3.5
+  },
+  {
+    "year": 1998,
+    "rating_count": 825000,
+    "average_rating": 3.55
+  },
+  {
+    "year": 1999,
+    "rating_count": 860000,
+    "average_rating": 3.6
+  },
+  {
+    "year": 2000,
+    "rating_count": 575000,
+    "average_rating": 3.4
+  },
+  {
+    "year": 2001,
+    "rating_count": 610000,
+    "average_rating": 3.45
+  },
+  {
+    "year": 2002,
+    "rating_count": 645000,
+    "average_rating": 3.5
+  },
+  {
+    "year": 2003,
+    "rating_count": 680000,
+    "average_rating": 3.55
+  },
+  {
+    "year": 2004,
+    "rating_count": 395000,
+    "average_rating": 3.6
+  },
+  {
+    "year": 2005,
+    "rating_count": 430000,
+    "average_rating": 3.4
+  },
+  {
+    "year": 2006,
+    "rating_count": 555000,
+    "average_rating": 3.45
+  },
+  {
+    "year": 2007,
+    "rating_count": 680000,
+    "average_rating": 3.5
+  },
+  {
+    "year": 2008,
+    "rating_count": 485000,
+    "average_rating": 3.55
+  },
+  {
+    "year": 2009,
+    "rating_count": 610000,
+    "average_rating": 3.6
+  },
+  {
+    "year": 2010,
+    "rating_count": 735000,
+    "average_rating": 3.4
+  },
+  {
+    "year": 2011,
+    "rating_count": 860000,
+    "average_rating": 3.45
+  },
+  {
+    "year": 2012,
+    "rating_count": 665000,
+    "average_rating": 3.5
+  },
+  {
+    "year": 2013,
+    "rating_count": 790000,
+    "average_rating": 3.55
+  },
+  {
+    "year": 2014,
+    "rating_count": 915000,
+    "average_rating": 3.6
+  },
+  {
+    "year": 2015,
+    "rating_count": 1040000,
+    "average_rating": 3.4
+  },
+  {
+    "year": 2016,
+    "rating_count": 845000,
+    "average_rating": 3.45
+  },
+  {
+    "year": 2017,
+    "rating_count": 970000,
+    "average_rating": 3.5
+  },
+  {
+    "year": 2018,
+    "rating_count": 1095000,
+    "average_rating": 3.55
+  },
+  {
+    "year": 2019,
+    "rating_count": 1220000,
+    "average_rating": 3.6
+  },
+  {
+    "year": 2020,
+    "rating_count": 1025000,
+    "average_rating": 3.4
+  },
+  {
+    "year": 2021,
+    "rating_count": 1150000,
+    "average_rating": 3.45
+  },
+  {
+    "year": 2022,
+    "rating_count": 1275000,
+    "average_rating": 3.5
+  },
+  {
+    "year": 2023,
+    "rating_count": 1400000,
+    "average_rating": 3.55
+  }
+]

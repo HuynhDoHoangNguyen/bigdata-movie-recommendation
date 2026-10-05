@@ -1,0 +1,116 @@
+[
+  {
+    "genre": "Drama",
+    "movie_count": 32410,
+    "rating_count": 14210984,
+    "average_rating": 3.68
+  },
+  {
+    "genre": "Comedy",
+    "movie_count": 21450,
+    "rating_count": 11340562,
+    "average_rating": 3.42
+  },
+  {
+    "genre": "Action",
+    "movie_count": 10540,
+    "rating_count": 9245102,
+    "average_rating": 3.45
+  },
+  {
+    "genre": "Thriller",
+    "movie_count": 11200,
+    "rating_count": 8765430,
+    "average_rating": 3.51
+  },
+  {
+    "genre": "Adventure",
+    "movie_count": 6410,
+    "rating_count": 7234120,
+    "average_rating": 3.52
+  },
+  {
+    "genre": "Romance",
+    "movie_count": 9820,
+    "rating_count": 5894320,
+    "average_rating": 3.54
+  },
+  {
+    "genre": "Sci-Fi",
+    "movie_count": 5210,
+    "rating_count": 5642190,
+    "average_rating": 3.48
+  },
+  {
+    "genre": "Crime",
+    "movie_count": 6890,
+    "rating_count": 5421980,
+    "average_rating": 3.67
+  },
+  {
+    "genre": "Fantasy",
+    "movie_count": 3820,
+    "rating_count": 3894560,
+    "average_rating": 3.5
+  },
+  {
+    "genre": "Mystery",
+    "movie_count": 3910,
+    "rating_count": 2674310,
+    "average_rating": 3.65
+  },
+  {
+    "genre": "Horror",
+    "movie_count": 7210,
+    "rating_count": 2341560,
+    "average_rating": 3.12
+  },
+  {
+    "genre": "Children",
+    "movie_count": 3540,
+    "rating_count": 2564310,
+    "average_rating": 3.41
+  },
+  {
+    "genre": "Animation",
+    "movie_count": 3980,
+    "rating_count": 2154390,
+    "average_rating": 3.61
+  },
+  {
+    "genre": "War",
+    "movie_count": 2560,
+    "rating_count": 1876540,
+    "average_rating": 3.79
+  },
+  {
+    "genre": "IMAX",
+    "movie_count": 320,
+    "rating_count": 1245670,
+    "average_rating": 3.62
+  },
+  {
+    "genre": "Musical",
+    "movie_count": 1680,
+    "rating_count": 1124500,
+    "average_rating": 3.53
+  },
+  {
+    "genre": "Documentary",
+    "movie_count": 7450,
+    "rating_count": 542100,
+    "average_rating": 3.7
+  },
+  {
+    "genre": "Western",
+    "movie_count": 1840,
+    "rating_count": 643210,
+    "average_rating": 3.56
+  },
+  {
+    "genre": "Film-Noir",
+    "movie_count": 520,
+    "rating_count": 345670,
+    "average_rating": 3.92
+  }
+]

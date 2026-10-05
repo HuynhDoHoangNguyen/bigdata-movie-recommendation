@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %}Gợi ý | Big Data Movie Recommendation{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h2 class="border-bottom pb-3">Gợi ý phim cho bạn</h2>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="alert alert-info shadow-sm" role="alert">
+            Demo hiện tại sử dụng <strong>SAMPLE model</strong> (10,000/200,948 users). Chỉ có 20 users có sẵn recommendation.
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <!-- Input Section -->
+    <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <h5 class="card-title mb-4">Chọn User</h5>
+                <form id="recommendForm">
+                    <div class="mb-3">
+                        <label for="userIdInput" class="form-label">Nhập User ID hoặc chọn:</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="userIdInput" placeholder="Nhập User ID...">
+                            <select class="form-select" id="userIdSelect" style="max-width: 130px;">
+                                <option value="" selected>Chọn...</option>
+                                {% for uid in demo_users %}
+                                <option value="{{ uid }}">User {{ uid }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-text">Chọn từ danh sách hoặc nhập User ID</div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="form-label d-block">Chế độ hiển thị:</label>
+                        <div class="btn-group w-100" role="group">
+                            <input type="radio" class="btn-check" name="modeRadio" id="modeRerank" value="rerank" checked>
+                            <label class="btn btn-outline-primary" for="modeRerank">Reranked (đề xuất)</label>
+
+                            <input type="radio" class="btn-check" name="modeRadio" id="modeRaw" value="raw">
+                            <label class="btn btn-outline-primary" for="modeRaw">Raw ALS (đối chiếu)</label>
+                        </div>
+                    </div>
+                    
+                    <button type="button" id="btnRecommend" class="btn btn-primary w-100 py-2">
+                        <span id="btnSpinner" class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true"></span>
+                        Gợi ý
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Section -->
+    <div class="col-md-8">
+        <div class="card shadow-sm h-100">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Kết quả Gợi ý</h5>
+            </div>
+            <div class="card-body bg-light overflow-auto" style="max-height: 600px;">
+                <div id="recommendResults" class="text-center py-5">
+                    <p class="text-muted mb-0 fs-5">Chọn một User ID để xem gợi ý phim</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  const demoUsers = {{ demo_users | default([]) | tojson }};
+  
+  document.addEventListener('DOMContentLoaded', function() {
+      const select = document.getElementById('userIdSelect');
+      const input = document.getElementById('userIdInput');
+      
+      if (select && input) {
+          select.addEventListener('change', function() {
+              if (this.value) {
+                  input.value = this.value;
+              }
+          });
+      }
+  });
+</script>
+{% endblock %}
