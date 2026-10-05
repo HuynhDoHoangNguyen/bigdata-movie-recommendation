@@ -4,6 +4,28 @@
 
 TV3 trains and evaluates Spark MLlib ALS on the TV2 handoff, selects parameters on a deterministic validation set, evaluates the selected model once on TV2 test, and exports model/metrics/recommendations for TV4.
 
+Phase B on the new machine is complete with a **SAMPLE** model. See
+`docs/TV3_PHASE_B_COMPLETION_REPORT.md` and `docs/TV3_HANDOFF_TO_TV4.md`.
+Current manifest is `SAMPLE_COMPLETE_WARNING`; full-data ALS has not run.
+Final sample test RMSE=0.8146154253, MAE=0.6200873149; 200 Top-10 rows for
+20 demo users are materialized. Precision/Recall@10 on 500 sample users are
+both zero and are a documented ranking-quality limitation.
+
+Phase C diagnostic is complete. See
+[ranking report](../../docs/TV3_RANKING_DIAGNOSTIC_REPORT.md) and its JSON evidence.
+Metric/ID/filter audits passed; weak ALS score ordering favors items with little
+sample-train support. On the same 500 users, train-only popularity achieves
+Precision@10=0.1252 versus ALS=0. The saved model and handoff remain unchanged.
+`ranking_diagnostic.py` reads the saved model without fitting and refuses an
+existing diagnostic output path; its completed results should be read directly.
+
+`final_sample.py` fits one model from preserved tuning evidence and evaluates
+matching sample TV2 test; `sample_handoff.py` reloads it in a separate application
+and exports demo Top-N/Top-K. They refuse existing outputs and never tune/full-fit.
+Use `verify_outputs.py` to inspect the current artifacts. Do not rerun `main.py`
+or training to serve the TV4 dashboard. `recommend.py` writes only new paths
+inside TV3/recommendations and rejects users outside the saved model scope.
+
 ## 2. Input từ TV2
 
 | Dataset | HDFS path | Schema |
@@ -14,13 +36,25 @@ TV3 trains and evaluates Spark MLlib ALS on the TV2 handoff, selects parameters 
 
 Do not train from RAW CSV and do not repeat TV2 preprocessing.
 
+New-machine smoke/tuning results and the full ALS readiness checkpoint are in
+`docs/TV3_PHASE_A_COMPLETION_REPORT.md`. Controlled tuning records a failed
+experiment and stops immediately rather than starting the next configuration.
+
+For new-machine recovery, run `input_gate.py` after the original TV1/TV2
+pipelines finish, with the same Spark resource options as below. It only reads
+inputs and measures runtime counts, nulls, overlap and cold-start; it never fits
+ALS or writes HDFS outputs. Historical train/test counts are references.
+The overall gate also requires `hdfs fsck /project/movielens -files -blocks`
+and `hdfs dfsadmin -report` to pass. New-machine evidence is recorded in
+`docs/TV3_NEW_MACHINE_INPUT_RECOVERY.md`.
+
 ## 3. Cách chạy toàn bộ pipeline
 
 Run from repository root in PowerShell:
 
 ```powershell
-docker compose build spark-master
-docker compose up -d --force-recreate spark-master spark-worker1 spark-worker2
+docker compose -f docker-compose.yml -f docker-compose.tv3.yml build spark-master
+docker compose -f docker-compose.yml -f docker-compose.tv3.yml up -d --force-recreate spark-master spark-worker1 spark-worker2
 
 docker exec spark-master /opt/spark/bin/spark-submit `
   --master spark://spark-master:7077 `

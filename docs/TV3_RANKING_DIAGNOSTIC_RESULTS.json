@@ -1,0 +1,592 @@
+﻿{
+    "als_ranking":  [
+                        {
+                            "avg_recommendations_per_user":  10.0,
+                            "hit_rate":  0.0,
+                            "hits":  0,
+                            "k":  10,
+                            "max_recommendations_per_user":  10,
+                            "min_recommendations_per_user":  10,
+                            "precision":  0.0,
+                            "recall":  0.0,
+                            "recommendations":  5000,
+                            "users":  500,
+                            "users_with_fewer_than_k":  0
+                        },
+                        {
+                            "avg_recommendations_per_user":  20.0,
+                            "hit_rate":  0.008,
+                            "hits":  4,
+                            "k":  20,
+                            "max_recommendations_per_user":  20,
+                            "min_recommendations_per_user":  20,
+                            "precision":  0.0004,
+                            "recall":  0.00018567572274468826,
+                            "recommendations":  10000,
+                            "users":  500,
+                            "users_with_fewer_than_k":  0
+                        },
+                        {
+                            "avg_recommendations_per_user":  50.0,
+                            "hit_rate":  0.014,
+                            "hits":  7,
+                            "k":  50,
+                            "max_recommendations_per_user":  50,
+                            "min_recommendations_per_user":  50,
+                            "precision":  0.00028000000000000003,
+                            "recall":  0.000720474257543223,
+                            "recommendations":  25000,
+                            "users":  500,
+                            "users_with_fewer_than_k":  0
+                        },
+                        {
+                            "avg_recommendations_per_user":  100.0,
+                            "hit_rate":  0.04,
+                            "hits":  24,
+                            "k":  100,
+                            "max_recommendations_per_user":  100,
+                            "min_recommendations_per_user":  100,
+                            "precision":  0.00048,
+                            "recall":  0.004226561134376722,
+                            "recommendations":  50000,
+                            "users":  500,
+                            "users_with_fewer_than_k":  0
+                        }
+                    ],
+    "candidate_coverage":  [
+                               {
+                                   "after_history_filter":  49825,
+                                   "avg_raw_candidates_per_user":  100.0,
+                                   "avg_unseen_candidates_per_user":  99.65,
+                                   "candidate_n":  100,
+                                   "k":  10,
+                                   "missing_metadata_candidates":  0,
+                                   "raw_candidates":  50000,
+                                   "relevant_pairs_after_history_filter":  24,
+                                   "relevant_pairs_in_raw_pool":  24
+                               },
+                               {
+                                   "after_history_filter":  99465,
+                                   "avg_raw_candidates_per_user":  200.0,
+                                   "avg_unseen_candidates_per_user":  198.93,
+                                   "candidate_n":  200,
+                                   "k":  20,
+                                   "missing_metadata_candidates":  0,
+                                   "raw_candidates":  100000,
+                                   "relevant_pairs_after_history_filter":  87,
+                                   "relevant_pairs_in_raw_pool":  87
+                               },
+                               {
+                                   "after_history_filter":  247757,
+                                   "avg_raw_candidates_per_user":  500.0,
+                                   "avg_unseen_candidates_per_user":  495.514,
+                                   "candidate_n":  500,
+                                   "k":  50,
+                                   "missing_metadata_candidates":  0,
+                                   "raw_candidates":  250000,
+                                   "relevant_pairs_after_history_filter":  445,
+                                   "relevant_pairs_in_raw_pool":  445
+                               },
+                               {
+                                   "after_history_filter":  494198,
+                                   "avg_raw_candidates_per_user":  1000.0,
+                                   "avg_unseen_candidates_per_user":  988.396,
+                                   "candidate_n":  1000,
+                                   "k":  100,
+                                   "missing_metadata_candidates":  0,
+                                   "raw_candidates":  500000,
+                                   "relevant_pairs_after_history_filter":  1112,
+                                   "relevant_pairs_in_raw_pool":  1112
+                               }
+                           ],
+    "case_studies":  [
+                         {
+                             "intersection_count":  0,
+                             "relevant_items_in_raw_top100":  0,
+                             "relevant_items_in_raw_top1000":  0,
+                             "relevant_items_with_factors":  4,
+                             "relevant_movie_ids":  [
+                                                        5816,
+                                                        5995,
+                                                        54001,
+                                                        69844
+                                                    ],
+                             "relevant_test_count":  4,
+                             "top10":  [
+                                           {
+                                               "movieId":  213668,
+                                               "prediction":  6.817440986633301,
+                                               "rank":  1
+                                           },
+                                           {
+                                               "movieId":  66385,
+                                               "prediction":  5.512826919555664,
+                                               "rank":  2
+                                           },
+                                           {
+                                               "movieId":  169882,
+                                               "prediction":  5.400079727172852,
+                                               "rank":  3
+                                           },
+                                           {
+                                               "movieId":  62586,
+                                               "prediction":  5.386716842651367,
+                                               "rank":  4
+                                           },
+                                           {
+                                               "movieId":  221570,
+                                               "prediction":  5.385685920715332,
+                                               "rank":  5
+                                           },
+                                           {
+                                               "movieId":  69241,
+                                               "prediction":  5.329672813415527,
+                                               "rank":  6
+                                           },
+                                           {
+                                               "movieId":  88138,
+                                               "prediction":  5.320152759552002,
+                                               "rank":  7
+                                           },
+                                           {
+                                               "movieId":  181873,
+                                               "prediction":  5.278502941131592,
+                                               "rank":  8
+                                           },
+                                           {
+                                               "movieId":  187697,
+                                               "prediction":  5.278502941131592,
+                                               "rank":  9
+                                           },
+                                           {
+                                               "movieId":  25738,
+                                               "prediction":  5.274997234344482,
+                                               "rank":  10
+                                           }
+                                       ],
+                             "train_history_count":  43,
+                             "userId":  54836
+                         },
+                         {
+                             "intersection_count":  0,
+                             "relevant_items_in_raw_top100":  0,
+                             "relevant_items_in_raw_top1000":  0,
+                             "relevant_items_with_factors":  8,
+                             "relevant_movie_ids":  [
+                                                        1197,
+                                                        1252,
+                                                        2115,
+                                                        2968,
+                                                        4993,
+                                                        5952,
+                                                        6539,
+                                                        6947
+                                                    ],
+                             "relevant_test_count":  8,
+                             "top10":  [
+                                           {
+                                               "movieId":  169882,
+                                               "prediction":  7.026615619659424,
+                                               "rank":  1
+                                           },
+                                           {
+                                               "movieId":  142861,
+                                               "prediction":  6.527352333068848,
+                                               "rank":  2
+                                           },
+                                           {
+                                               "movieId":  210105,
+                                               "prediction":  6.331395626068115,
+                                               "rank":  3
+                                           },
+                                           {
+                                               "movieId":  27587,
+                                               "prediction":  6.304311275482178,
+                                               "rank":  4
+                                           },
+                                           {
+                                               "movieId":  201450,
+                                               "prediction":  6.264383792877197,
+                                               "rank":  5
+                                           },
+                                           {
+                                               "movieId":  88138,
+                                               "prediction":  6.225275039672852,
+                                               "rank":  6
+                                           },
+                                           {
+                                               "movieId":  7578,
+                                               "prediction":  6.174534320831299,
+                                               "rank":  7
+                                           },
+                                           {
+                                               "movieId":  126086,
+                                               "prediction":  6.108621597290039,
+                                               "rank":  8
+                                           },
+                                           {
+                                               "movieId":  7959,
+                                               "prediction":  6.101423263549805,
+                                               "rank":  9
+                                           },
+                                           {
+                                               "movieId":  103210,
+                                               "prediction":  6.072296619415283,
+                                               "rank":  10
+                                           }
+                                       ],
+                             "train_history_count":  44,
+                             "userId":  103269
+                         },
+                         {
+                             "intersection_count":  0,
+                             "relevant_items_in_raw_top100":  0,
+                             "relevant_items_in_raw_top1000":  0,
+                             "relevant_items_with_factors":  9,
+                             "relevant_movie_ids":  [
+                                                        1198,
+                                                        3793,
+                                                        4963,
+                                                        33794,
+                                                        49272,
+                                                        65216,
+                                                        89085,
+                                                        109374,
+                                                        134130
+                                                    ],
+                             "relevant_test_count":  9,
+                             "top10":  [
+                                           {
+                                               "movieId":  213668,
+                                               "prediction":  5.792048454284668,
+                                               "rank":  1
+                                           },
+                                           {
+                                               "movieId":  72037,
+                                               "prediction":  5.492244720458984,
+                                               "rank":  2
+                                           },
+                                           {
+                                               "movieId":  104350,
+                                               "prediction":  5.336960315704346,
+                                               "rank":  3
+                                           },
+                                           {
+                                               "movieId":  53827,
+                                               "prediction":  5.143733024597168,
+                                               "rank":  4
+                                           },
+                                           {
+                                               "movieId":  210105,
+                                               "prediction":  5.113659381866455,
+                                               "rank":  5
+                                           },
+                                           {
+                                               "movieId":  216845,
+                                               "prediction":  5.062498569488525,
+                                               "rank":  6
+                                           },
+                                           {
+                                               "movieId":  182637,
+                                               "prediction":  5.032283782958984,
+                                               "rank":  7
+                                           },
+                                           {
+                                               "movieId":  202359,
+                                               "prediction":  5.023951053619385,
+                                               "rank":  8
+                                           },
+                                           {
+                                               "movieId":  7456,
+                                               "prediction":  4.958003997802734,
+                                               "rank":  9
+                                           },
+                                           {
+                                               "movieId":  5352,
+                                               "prediction":  4.943212032318115,
+                                               "rank":  10
+                                           }
+                                       ],
+                             "train_history_count":  92,
+                             "userId":  108505
+                         },
+                         {
+                             "intersection_count":  0,
+                             "relevant_items_in_raw_top100":  1,
+                             "relevant_items_in_raw_top1000":  3,
+                             "relevant_items_with_factors":  13,
+                             "relevant_movie_ids":  [
+                                                        232,
+                                                        318,
+                                                        904,
+                                                        1203,
+                                                        3578,
+                                                        72226,
+                                                        91077,
+                                                        97938,
+                                                        99149,
+                                                        160980,
+                                                        171763,
+                                                        177615,
+                                                        207313
+                                                    ],
+                             "relevant_test_count":  13,
+                             "top10":  [
+                                           {
+                                               "movieId":  169882,
+                                               "prediction":  6.373469352722168,
+                                               "rank":  1
+                                           },
+                                           {
+                                               "movieId":  201450,
+                                               "prediction":  6.03306770324707,
+                                               "rank":  2
+                                           },
+                                           {
+                                               "movieId":  151279,
+                                               "prediction":  5.63028621673584,
+                                               "rank":  3
+                                           },
+                                           {
+                                               "movieId":  142861,
+                                               "prediction":  5.595544815063477,
+                                               "rank":  4
+                                           },
+                                           {
+                                               "movieId":  128151,
+                                               "prediction":  5.501083850860596,
+                                               "rank":  5
+                                           },
+                                           {
+                                               "movieId":  58898,
+                                               "prediction":  5.494441032409668,
+                                               "rank":  6
+                                           },
+                                           {
+                                               "movieId":  126941,
+                                               "prediction":  5.494441032409668,
+                                               "rank":  7
+                                           },
+                                           {
+                                               "movieId":  196787,
+                                               "prediction":  5.494441032409668,
+                                               "rank":  8
+                                           },
+                                           {
+                                               "movieId":  250764,
+                                               "prediction":  5.494441032409668,
+                                               "rank":  9
+                                           },
+                                           {
+                                               "movieId":  210105,
+                                               "prediction":  5.452451705932617,
+                                               "rank":  10
+                                           }
+                                       ],
+                             "train_history_count":  65,
+                             "userId":  128517
+                         },
+                         {
+                             "intersection_count":  0,
+                             "relevant_items_in_raw_top100":  0,
+                             "relevant_items_in_raw_top1000":  1,
+                             "relevant_items_with_factors":  18,
+                             "relevant_movie_ids":  [
+                                                        104,
+                                                        216,
+                                                        318,
+                                                        1060,
+                                                        1265,
+                                                        1466,
+                                                        2502,
+                                                        2706,
+                                                        2707,
+                                                        2762,
+                                                        3386,
+                                                        3617,
+                                                        4011,
+                                                        4022,
+                                                        6188,
+                                                        6440,
+                                                        7147,
+                                                        7160
+                                                    ],
+                             "relevant_test_count":  18,
+                             "top10":  [
+                                           {
+                                               "movieId":  171179,
+                                               "prediction":  6.190203666687012,
+                                               "rank":  1
+                                           },
+                                           {
+                                               "movieId":  128089,
+                                               "prediction":  6.0246663093566895,
+                                               "rank":  2
+                                           },
+                                           {
+                                               "movieId":  4208,
+                                               "prediction":  5.894129276275635,
+                                               "rank":  3
+                                           },
+                                           {
+                                               "movieId":  142861,
+                                               "prediction":  5.719175338745117,
+                                               "rank":  4
+                                           },
+                                           {
+                                               "movieId":  86347,
+                                               "prediction":  5.606513977050781,
+                                               "rank":  5
+                                           },
+                                           {
+                                               "movieId":  90592,
+                                               "prediction":  5.595092296600342,
+                                               "rank":  6
+                                           },
+                                           {
+                                               "movieId":  79477,
+                                               "prediction":  5.590473175048828,
+                                               "rank":  7
+                                           },
+                                           {
+                                               "movieId":  69241,
+                                               "prediction":  5.580615997314453,
+                                               "rank":  8
+                                           },
+                                           {
+                                               "movieId":  201450,
+                                               "prediction":  5.578478813171387,
+                                               "rank":  9
+                                           },
+                                           {
+                                               "movieId":  121155,
+                                               "prediction":  5.551731586456299,
+                                               "rank":  10
+                                           }
+                                       ],
+                             "train_history_count":  116,
+                             "userId":  143637
+                         }
+                     ],
+    "eligibility":  {
+                        "eligible_relevant_pairs_outside_top1000_pool":  7391,
+                        "evaluation_relevant_movies":  3089,
+                        "evaluation_relevant_pairs":  8569,
+                        "evaluation_relevant_pairs_with_factors":  8503,
+                        "evaluation_relevant_pairs_without_factors":  66,
+                        "model_item_factors":  27941,
+                        "movie_id_types":  {
+                                               "raw":  "int",
+                                               "relevant":  "int"
+                                           },
+                        "relevant_history_overlap":  0,
+                        "sample_relevant_movies":  10533,
+                        "sample_relevant_movies_with_factors":  9893,
+                        "sample_train_test_overlap":  0,
+                        "top10_duplicate_pairs":  0,
+                        "top10_history_overlap":  0
+                    },
+    "generated_at_utc":  "2026-10-04T18:00:22.330616+00:00",
+    "original_top10":  {
+                           "precision":  0.0,
+                           "recall":  0.0
+                       },
+    "popularity_baseline":  {
+                                "candidate_buffer":  "10*K; popularity-ordered rather than ALS-score-ordered",
+                                "candidate_item_eligibility":  "same model item factors and STANDARD metadata as ALS",
+                                "fit_source":  "SAMPLE TV2 TRAIN ONLY",
+                                "ranking":  [
+                                                {
+                                                    "avg_recommendations_per_user":  10.0,
+                                                    "hit_rate":  0.588,
+                                                    "hits":  626,
+                                                    "k":  10,
+                                                    "max_recommendations_per_user":  10,
+                                                    "min_recommendations_per_user":  10,
+                                                    "precision":  0.1252000000000004,
+                                                    "recall":  0.1001325489450805,
+                                                    "recommendations":  5000,
+                                                    "users":  500,
+                                                    "users_with_fewer_than_k":  0
+                                                },
+                                                {
+                                                    "avg_recommendations_per_user":  20.0,
+                                                    "hit_rate":  0.69,
+                                                    "hits":  979,
+                                                    "k":  20,
+                                                    "max_recommendations_per_user":  20,
+                                                    "min_recommendations_per_user":  20,
+                                                    "precision":  0.0978999999999997,
+                                                    "recall":  0.15426798536328062,
+                                                    "recommendations":  10000,
+                                                    "users":  500,
+                                                    "users_with_fewer_than_k":  0
+                                                },
+                                                {
+                                                    "avg_recommendations_per_user":  50.0,
+                                                    "hit_rate":  0.81,
+                                                    "hits":  1670,
+                                                    "k":  50,
+                                                    "max_recommendations_per_user":  50,
+                                                    "min_recommendations_per_user":  50,
+                                                    "precision":  0.06679999999999983,
+                                                    "recall":  0.24575265077264996,
+                                                    "recommendations":  25000,
+                                                    "users":  500,
+                                                    "users_with_fewer_than_k":  0
+                                                },
+                                                {
+                                                    "avg_recommendations_per_user":  100.0,
+                                                    "hit_rate":  0.878,
+                                                    "hits":  2350,
+                                                    "k":  100,
+                                                    "max_recommendations_per_user":  100,
+                                                    "min_recommendations_per_user":  100,
+                                                    "precision":  0.047000000000000174,
+                                                    "recall":  0.3353008013307363,
+                                                    "recommendations":  50000,
+                                                    "users":  500,
+                                                    "users_with_fewer_than_k":  0
+                                                }
+                                            ],
+                                "status":  "PASS"
+                            },
+    "protected_artifacts":  {
+                                "after":  {
+                                              "files":  43,
+                                              "sha256":  "46ff7632721e6639ec059428effaeb5429a2bfbc1c33186bfc80c09d5c7c0ead"
+                                          },
+                                "before":  {
+                                               "files":  43,
+                                               "sha256":  "46ff7632721e6639ec059428effaeb5429a2bfbc1c33186bfc80c09d5c7c0ead"
+                                           },
+                                "unchanged":  true
+                            },
+    "runtime_sec":  128.31234842100002,
+    "scope":  "SAMPLE_500_ELIGIBLE_USERS",
+    "seed":  42,
+    "status":  "DIAGNOSTIC_COMPLETE",
+    "synthetic_metric_check":  {
+                                   "hits":  2,
+                                   "precision_at_10":  0.1,
+                                   "recall_at_10":  0.75,
+                                   "status":  "PASS"
+                               },
+    "top10_score_audit":  {
+                              "distinct_top10_movies":  588,
+                              "max_score":  10.028754234313965,
+                              "mean_item_train_count":  4.4224,
+                              "mean_score":  5.748091397571564,
+                              "min_score":  3.3343758583068848,
+                              "recommendation_score_consistency":  {
+                                                                       "max_absolute_difference":  1.430511474609375E-06,
+                                                                       "mismatches_above_1e_4":  0
+                                                                   },
+                              "recommendations_from_items_with_at_most_5_train_rows":  3937,
+                              "relevant_prediction_stats":  {
+                                                                "max":  5.66961145401001,
+                                                                "mean":  3.8492111857745224,
+                                                                "min":  -1.5478901863098145
+                                                            }
+                          }
+}

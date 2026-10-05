@@ -10,6 +10,7 @@ def run_experiments(
 ):
     results = []
     for params in experiments:
+        failure = None
         experiment_id = params["experiment_id"]
         print(f"Training controlled experiment {experiment_id}: {params}", flush=True)
         base = {
@@ -32,6 +33,7 @@ def run_experiments(
                 "notes": "Hyperparameter selection metric; TV2 test was not used",
             })
         except Exception as exc:  # Preserve failed experiment evidence without inventing metrics.
+            failure = exc
             base.update({
                 "training_time_sec": None,
                 "valid_prediction_rows": None,
@@ -46,6 +48,10 @@ def run_experiments(
         results.append(base)
         if on_result is not None:
             on_result(base, len(results) == 1)
+        if failure is not None:
+            raise RuntimeError(
+                f"Experiment {experiment_id} failed; stopping controlled tuning"
+            ) from failure
     passed = [row for row in results if row["status"] == "PASS"]
     if not passed:
         raise RuntimeError("All controlled ALS experiments failed")

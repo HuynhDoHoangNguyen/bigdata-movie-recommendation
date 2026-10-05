@@ -14,6 +14,7 @@ from config import (
     TRAIN_PATH,
 )
 from topn import recommend_unseen
+from output_contract import validate_recommendation_path
 
 
 def parse_args():
@@ -29,6 +30,7 @@ def parse_args():
 
 def main():
     args = parse_args()
+    validate_recommendation_path(args.output)
     if args.top_n <= 0:
         raise ValueError("--top-n must be positive")
     spark = SparkSession.builder.appName("MovieLensTV3Recommend").getOrCreate()
@@ -38,16 +40,19 @@ def main():
     model = ALSModel.load(MODEL_PATH)
     if args.user_id is not None:
         users = spark.createDataFrame([(args.user_id,)], "userId INT")
-        if not train.where(train.userId == args.user_id).limit(1).count():
-            raise ValueError(f"userId {args.user_id} does not exist in TV2 train")
+        if not model.userFactors.where(model.userFactors.id == args.user_id).limit(1).count():
+            raise ValueError(f"userId {args.user_id} does not exist in the saved model scope")
     elif args.all_users:
-        users = train.select("userId").distinct()
+        users = model.userFactors.selectExpr("cast(id as int) userId")
     else:
         users = spark.read.parquet(args.users_file).selectExpr("cast(userId as int) userId").distinct()
+        unknown_users = users.join(model.userFactors.selectExpr("id userId"), "userId", "left_anti")
+        if unknown_users.limit(1).count():
+            raise ValueError("users-file contains users outside the saved model scope")
     output = recommend_unseen(
         model, train, movies, users, args.top_n, RECOMMENDATION_CANDIDATE_MULTIPLIER
     )
-    output.write.mode("overwrite").parquet(args.output)
+    output.write.mode("errorifexists").parquet(args.output)
     rows = spark.read.parquet(args.output)
     print({"output": args.output, "rows": rows.count(),
            "users": rows.select("userId").distinct().count()}, flush=True)

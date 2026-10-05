@@ -96,6 +96,10 @@ def evaluate_top_k(
         F.count("*").alias("evaluated_users"),
         F.avg("precision_at_k").alias("precision_at_k"),
         F.avg("recall_at_k").alias("recall_at_k"),
+        F.sum("hits").alias("total_hits"),
+        F.sum((F.col("hits") > 0).cast("long")).alias("users_with_hits"),
+        F.sum(F.size("recommended_items")).alias("recommended_item_count"),
+        F.sum(F.size("relevant_items")).alias("relevant_item_count"),
     ).first().asDict()
     aggregate.update({
         "k": int(k),

@@ -1,5 +1,14 @@
 # Báo cáo hiện trạng và các vấn đề còn lại của thành viên 3 (TV3)
 
+> Báo cáo lịch sử của máy cũ. Trạng thái mới ngày 05/10/2026 (Asia/Saigon):
+> [Phase B completion report](TV3_PHASE_B_COMPLETION_REPORT.md) và
+> [TV4 handoff](TV3_HANDOFF_TO_TV4.md): SAMPLE model/output đã verify PASS với
+> status SAMPLE_COMPLETE_WARNING; Top-K bằng 0 là hạn chế chất lượng. Full ALS
+> chưa chạy. Các blocker SAMPLE cũ dưới đây không còn là trạng thái mới nhất.
+> [Phase A completion report](TV3_PHASE_A_COMPLETION_REPORT.md). Smoke test và
+> tuning sample trên máy mới đã PASS; full ALS chưa chạy. Resource và Git status
+> trong tài liệu này không đại diện cho máy mới.
+
 Ngày kiểm tra: 03/10/2026 (Asia/Bangkok)
 
 ## 1. Kết luận ngắn

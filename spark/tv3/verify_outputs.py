@@ -39,6 +39,17 @@ def require_path(spark, path, label):
 def main():
     spark = SparkSession.builder.appName("VerifyMovieLensTV3Outputs").getOrCreate()
     spark.sparkContext.setLogLevel("WARN")
+    if path_exists(spark, MANIFEST_PATH):
+        from output_contract import read_manifest
+        manifest = read_manifest(spark, MANIFEST_PATH)
+        if manifest.get("status") == "SAMPLE_COMPLETE_WARNING":
+            from verify_sample import verify_sample
+            try:
+                result = verify_sample(spark, manifest)
+                print(json.dumps(result, ensure_ascii=False, indent=2), flush=True)
+            finally:
+                spark.stop()
+            return
     errors, warnings = [], []
     for path, label in [
         (MODEL_PATH, "ALS model"),

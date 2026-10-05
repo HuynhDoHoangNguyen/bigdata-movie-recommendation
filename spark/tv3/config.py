@@ -12,6 +12,9 @@ FINAL_METRICS_PATH = f"{OUTPUT_BASE}/metrics/final"
 TOPK_METRICS_PATH = f"{OUTPUT_BASE}/metrics/top_k"
 RECOMMENDATIONS_PATH = f"{OUTPUT_BASE}/recommendations/topn"
 MANIFEST_PATH = f"{OUTPUT_BASE}/manifest"
+SAMPLE_USERS_PATH = f"{OUTPUT_BASE}/scope/sample_users"
+DEMO_USERS_PATH = f"{OUTPUT_BASE}/scope/demo_users"
+TUNING_MANIFEST_PATH = f"{OUTPUT_BASE}/audit/tuning_manifest"
 
 EXPECTED_ALS_COLUMNS = ["userId", "movieId", "rating"]
 EXPECTED_MOVIE_COLUMNS = ["movieId", "title", "genres"]

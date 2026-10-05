@@ -1,5 +1,11 @@
 # TV3 Input Audit
 
+> Historical audit from the previous machine. Its runtime PASS and TV3 tuning
+> results do not establish the state of the new machine. See
+> [new-machine recovery report](TV3_NEW_MACHINE_INPUT_RECOVERY.md) for the
+> 2026-10-05 audit (Asia/Saigon). TV1/TV2 sources and both Compose files are
+> protected during recovery; pre-existing dataset changes are preserved.
+
 Audit date: 2026-10-03 (Asia/Bangkok). Evidence labels used below: **EXPECTED**, **SOURCE VERIFIED**, and **RUNTIME VERIFIED**.
 
 ## 1. Project structure liên quan
