@@ -1,0 +1,807 @@
+{
+    "regression_checks":  {
+                              "deterministic_order":  "PASS",
+                              "history_exclusion":  "PASS",
+                              "independent_metrics":  "PASS",
+                              "selection":  "PASS",
+                              "shrinkage":  "PASS",
+                              "split_and_label_leakage":  "PASS",
+                              "status":  "PASS",
+                              "support_source":  "PASS"
+                          },
+    "temporary_selection_model":  {
+                                      "coldStartStrategy":  "drop",
+                                      "core_validation_overlap":  0,
+                                      "counts":  {
+                                                     "sample_train_rows":  1243712,
+                                                     "sample_users":  10000,
+                                                     "train_core_rows":  1123778,
+                                                     "validation_rows":  119934
+                                                 },
+                                      "factors":  {
+                                                      "items":  {
+                                                                    "distinct_ids":  26905,
+                                                                    "invalid_rows":  0,
+                                                                    "rows":  26905
+                                                                },
+                                                      "users":  {
+                                                                    "distinct_ids":  10000,
+                                                                    "invalid_rows":  0,
+                                                                    "rows":  10000
+                                                                }
+                                                  },
+                                      "fit_calls":  1,
+                                      "fit_source":  "SAMPLE_TRAIN_CORE_ONLY",
+                                      "fit_time_sec":  7.200765242999978,
+                                      "generated_at_utc":  "2026-10-05T08:05:37.906939+00:00",
+                                      "implicitPrefs":  false,
+                                      "model_path":  "hdfs://namenode:9000/project/movielens/output/tv3/diagnostics/reranking_phase_d/selection_model",
+                                      "model_scope":  "TEMPORARY_SELECTION_ONLY",
+                                      "parameters":  {
+                                                         "maxIter":  8,
+                                                         "rank":  10,
+                                                         "regParam":  0.05
+                                                     },
+                                      "protected_artifacts":  {
+                                                                  "after":  {
+                                                                                "files":  47,
+                                                                                "sha256":  "a27fce31e478a4d2ab3fc05f9f93fa7de03701489d4dbb9c723f4744a6b9c186"
+                                                                            },
+                                                                  "before":  {
+                                                                                 "files":  47,
+                                                                                 "sha256":  "a27fce31e478a4d2ab3fc05f9f93fa7de03701489d4dbb9c723f4744a6b9c186"
+                                                                             },
+                                                                  "unchanged":  true
+                                                              },
+                                      "runtime_sec":  49.539346153,
+                                      "seed":  42,
+                                      "selection_model_fingerprint":  {
+                                                                          "files":  24,
+                                                                          "sha256":  "cb81fd3524ac09fe69aeedbf093530b3e867640c44c349ac125bf74a0b2e7788"
+                                                                      },
+                                      "status":  "PASS",
+                                      "validation_rows_in_fit":  0
+                                  },
+    "validation":  {
+                       "counts":  {
+                                      "sample_train_rows":  1243712,
+                                      "sample_users":  10000,
+                                      "train_core_rows":  1123778,
+                                      "validation_rows":  119934
+                                  },
+                       "generated_at_utc":  "2026-10-05T08:08:53.218901+00:00",
+                       "global_train_core_mean":  3.5436634281859942,
+                       "hybrid":  "RUN_3_LAMBDAS_WITHIN_SAME_BOUNDED_ALS_POOL",
+                       "leakage_audit":  {
+                                             "core_validation_overlap":  0,
+                                             "feature_leakage_status":  "PASS",
+                                             "feature_source":  "SAMPLE_TRAIN_CORE_ONLY",
+                                             "model_validation_independence":  "PASS",
+                                             "partition_difference":  0,
+                                             "selection_model_train_source":  "SAMPLE_TRAIN_CORE_ONLY",
+                                             "support_sum_matches_core":  true,
+                                             "test_read_during_selection":  false,
+                                             "validation_is_unseen_by_selection_model":  true,
+                                             "validation_rows_seen_by_phase_b_model":  119934
+                                         },
+                       "limitation":  "Selection on 500 sample validation users; confirmation transfers the locked config to the unchanged Phase B model.",
+                       "protected_artifacts":  {
+                                                   "after":  {
+                                                                 "files":  47,
+                                                                 "sha256":  "a27fce31e478a4d2ab3fc05f9f93fa7de03701489d4dbb9c723f4744a6b9c186"
+                                                             },
+                                                   "before":  {
+                                                                  "files":  47,
+                                                                  "sha256":  "a27fce31e478a4d2ab3fc05f9f93fa7de03701489d4dbb9c723f4744a6b9c186"
+                                                              },
+                                                   "unchanged":  true
+                                               },
+                       "regression_checks":  {
+                                                 "deterministic_order":  "PASS",
+                                                 "history_exclusion":  "PASS",
+                                                 "independent_metrics":  "PASS",
+                                                 "selection":  "PASS",
+                                                 "shrinkage":  "PASS",
+                                                 "split_and_label_leakage":  "PASS",
+                                                 "status":  "PASS",
+                                                 "support_source":  "PASS"
+                                             },
+                       "results":  [
+                                       {
+                                           "audit":  {
+                                                         "duplicate_pairs":  0,
+                                                         "duplicate_ranks":  0,
+                                                         "history_overlap":  0,
+                                                         "invalid_rows":  0,
+                                                         "metadata_mismatches":  0,
+                                                         "rows":  5000,
+                                                         "unexpected_users":  0,
+                                                         "users":  500
+                                                     },
+                                           "avg_recommendations_per_user":  10.0,
+                                           "contract_verification":  "PASS",
+                                           "hit_rate":  0.0,
+                                           "hits":  0,
+                                           "k":  10,
+                                           "max_recommendations_per_user":  10,
+                                           "mean_item_support":  4.31,
+                                           "method":  "RAW_ALS",
+                                           "metric_verification":  "PASS",
+                                           "min_recommendations_per_user":  10,
+                                           "parameter":  0.0,
+                                           "precision":  0.0,
+                                           "recall":  0.0,
+                                           "recommendations":  5000,
+                                           "users":  500,
+                                           "users_with_10":  500,
+                                           "users_with_fewer_than_k":  0
+                                       },
+                                       {
+                                           "audit":  {
+                                                         "duplicate_pairs":  0,
+                                                         "duplicate_ranks":  0,
+                                                         "history_overlap":  0,
+                                                         "invalid_rows":  0,
+                                                         "metadata_mismatches":  0,
+                                                         "rows":  5000,
+                                                         "unexpected_users":  0,
+                                                         "users":  500
+                                                     },
+                                           "avg_recommendations_per_user":  10.0,
+                                           "contract_verification":  "PASS",
+                                           "hit_rate":  0.0,
+                                           "hits":  0,
+                                           "k":  10,
+                                           "max_recommendations_per_user":  10,
+                                           "mean_item_support":  4.8606,
+                                           "method":  "HARD_GATE",
+                                           "metric_verification":  "PASS",
+                                           "min_recommendations_per_user":  10,
+                                           "parameter":  2.0,
+                                           "precision":  0.0,
+                                           "recall":  0.0,
+                                           "recommendations":  5000,
+                                           "users":  500,
+                                           "users_with_10":  500,
+                                           "users_with_fewer_than_k":  0
+                                       },
+                                       {
+                                           "audit":  {
+                                                         "duplicate_pairs":  0,
+                                                         "duplicate_ranks":  0,
+                                                         "history_overlap":  0,
+                                                         "invalid_rows":  0,
+                                                         "metadata_mismatches":  0,
+                                                         "rows":  5000,
+                                                         "unexpected_users":  0,
+                                                         "users":  500
+                                                     },
+                                           "avg_recommendations_per_user":  10.0,
+                                           "contract_verification":  "PASS",
+                                           "hit_rate":  0.002,
+                                           "hits":  1,
+                                           "k":  10,
+                                           "max_recommendations_per_user":  10,
+                                           "mean_item_support":  12.9168,
+                                           "method":  "HARD_GATE",
+                                           "metric_verification":  "PASS",
+                                           "min_recommendations_per_user":  10,
+                                           "parameter":  5.0,
+                                           "precision":  0.0002,
+                                           "recall":  2.531645569620253E-05,
+                                           "recommendations":  5000,
+                                           "users":  500,
+                                           "users_with_10":  500,
+                                           "users_with_fewer_than_k":  0
+                                       },
+                                       {
+                                           "audit":  {
+                                                         "duplicate_pairs":  0,
+                                                         "duplicate_ranks":  0,
+                                                         "history_overlap":  0,
+                                                         "invalid_rows":  0,
+                                                         "metadata_mismatches":  0,
+                                                         "rows":  5000,
+                                                         "unexpected_users":  0,
+                                                         "users":  500
+                                                     },
+                                           "avg_recommendations_per_user":  10.0,
+                                           "contract_verification":  "PASS",
+                                           "hit_rate":  0.01,
+                                           "hits":  5,
+                                           "k":  10,
+                                           "max_recommendations_per_user":  10,
+                                           "mean_item_support":  45.2748,
+                                           "method":  "HARD_GATE",
+                                           "metric_verification":  "PASS",
+                                           "min_recommendations_per_user":  10,
+                                           "parameter":  10.0,
+                                           "precision":  0.001,
+                                           "recall":  0.0022789396441019994,
+                                           "recommendations":  5000,
+                                           "users":  500,
+                                           "users_with_10":  500,
+                                           "users_with_fewer_than_k":  0
+                                       },
+                                       {
+                                           "audit":  {
+                                                         "duplicate_pairs":  0,
+                                                         "duplicate_ranks":  0,
+                                                         "history_overlap":  0,
+                                                         "invalid_rows":  0,
+                                                         "metadata_mismatches":  0,
+                                                         "rows":  5000,
+                                                         "unexpected_users":  0,
+                                                         "users":  500
+                                                     },
+                                           "avg_recommendations_per_user":  10.0,
+                                           "contract_verification":  "PASS",
+                                           "hit_rate":  0.046,
+                                           "hits":  23,
+                                           "k":  10,
+                                           "max_recommendations_per_user":  10,
+                                           "mean_item_support":  144.8336,
+                                           "method":  "HARD_GATE",
+                                           "metric_verification":  "PASS",
+                                           "min_recommendations_per_user":  10,
+                                           "parameter":  20.0,
+                                           "precision":  0.004600000000000002,
+                                           "recall":  0.012769373896899163,
+                                           "recommendations":  5000,
+                                           "users":  500,
+                                           "users_with_10":  500,
+                                           "users_with_fewer_than_k":  0
+                                       },
+                                       {
+                                           "audit":  {
+                                                         "duplicate_pairs":  0,
+                                                         "duplicate_ranks":  0,
+                                                         "history_overlap":  0,
+                                                         "invalid_rows":  0,
+                                                         "metadata_mismatches":  0,
+                                                         "rows":  5000,
+                                                         "unexpected_users":  0,
+                                                         "users":  500
+                                                     },
+                                           "avg_recommendations_per_user":  10.0,
+                                           "contract_verification":  "PASS",
+                                           "hit_rate":  0.066,
+                                           "hits":  33,
+                                           "k":  10,
+                                           "max_recommendations_per_user":  10,
+                                           "mean_item_support":  205.3338,
+                                           "method":  "SHRINKAGE",
+                                           "metric_verification":  "PASS",
+                                           "min_recommendations_per_user":  10,
+                                           "parameter":  5.0,
+                                           "precision":  0.006600000000000002,
+                                           "recall":  0.017210744305405118,
+                                           "recommendations":  5000,
+                                           "users":  500,
+                                           "users_with_10":  500,
+                                           "users_with_fewer_than_k":  0
+                                       },
+                                       {
+                                           "audit":  {
+                                                         "duplicate_pairs":  0,
+                                                         "duplicate_ranks":  0,
+                                                         "history_overlap":  0,
+                                                         "invalid_rows":  0,
+                                                         "metadata_mismatches":  0,
+                                                         "rows":  5000,
+                                                         "unexpected_users":  0,
+                                                         "users":  500
+                                                     },
+                                           "avg_recommendations_per_user":  10.0,
+                                           "contract_verification":  "PASS",
+                                           "hit_rate":  0.142,
+                                           "hits":  81,
+                                           "k":  10,
+                                           "max_recommendations_per_user":  10,
+                                           "mean_item_support":  449.6004,
+                                           "method":  "SHRINKAGE",
+                                           "metric_verification":  "PASS",
+                                           "min_recommendations_per_user":  10,
+                                           "parameter":  10.0,
+                                           "precision":  0.016199999999999992,
+                                           "recall":  0.033561596725172574,
+                                           "recommendations":  5000,
+                                           "users":  500,
+                                           "users_with_10":  500,
+                                           "users_with_fewer_than_k":  0
+                                       },
+                                       {
+                                           "audit":  {
+                                                         "duplicate_pairs":  0,
+                                                         "duplicate_ranks":  0,
+                                                         "history_overlap":  0,
+                                                         "invalid_rows":  0,
+                                                         "metadata_mismatches":  0,
+                                                         "rows":  5000,
+                                                         "unexpected_users":  0,
+                                                         "users":  500
+                                                     },
+                                           "avg_recommendations_per_user":  10.0,
+                                           "contract_verification":  "PASS",
+                                           "hit_rate":  0.196,
+                                           "hits":  120,
+                                           "k":  10,
+                                           "max_recommendations_per_user":  10,
+                                           "mean_item_support":  737.5736,
+                                           "method":  "SHRINKAGE",
+                                           "metric_verification":  "PASS",
+                                           "min_recommendations_per_user":  10,
+                                           "parameter":  20.0,
+                                           "precision":  0.02399999999999999,
+                                           "recall":  0.04697161574416707,
+                                           "recommendations":  5000,
+                                           "users":  500,
+                                           "users_with_10":  500,
+                                           "users_with_fewer_than_k":  0
+                                       },
+                                       {
+                                           "audit":  {
+                                                         "duplicate_pairs":  0,
+                                                         "duplicate_ranks":  0,
+                                                         "history_overlap":  0,
+                                                         "invalid_rows":  0,
+                                                         "metadata_mismatches":  0,
+                                                         "rows":  5000,
+                                                         "unexpected_users":  0,
+                                                         "users":  500
+                                                     },
+                                           "avg_recommendations_per_user":  10.0,
+                                           "contract_verification":  "PASS",
+                                           "hit_rate":  0.258,
+                                           "hits":  168,
+                                           "k":  10,
+                                           "max_recommendations_per_user":  10,
+                                           "mean_item_support":  1078.0724,
+                                           "method":  "SHRINKAGE",
+                                           "metric_verification":  "PASS",
+                                           "min_recommendations_per_user":  10,
+                                           "parameter":  50.0,
+                                           "precision":  0.03360000000000001,
+                                           "recall":  0.06372782724594518,
+                                           "recommendations":  5000,
+                                           "users":  500,
+                                           "users_with_10":  500,
+                                           "users_with_fewer_than_k":  0
+                                       },
+                                       {
+                                           "audit":  {
+                                                         "duplicate_pairs":  0,
+                                                         "duplicate_ranks":  0,
+                                                         "history_overlap":  0,
+                                                         "invalid_rows":  0,
+                                                         "metadata_mismatches":  0,
+                                                         "rows":  5000,
+                                                         "unexpected_users":  0,
+                                                         "users":  500
+                                                     },
+                                           "avg_recommendations_per_user":  10.0,
+                                           "contract_verification":  "PASS",
+                                           "hit_rate":  0.166,
+                                           "hits":  95,
+                                           "k":  10,
+                                           "max_recommendations_per_user":  10,
+                                           "mean_item_support":  636.0672,
+                                           "method":  "HYBRID",
+                                           "metric_verification":  "PASS",
+                                           "min_recommendations_per_user":  10,
+                                           "parameter":  0.25,
+                                           "precision":  0.01899999999999999,
+                                           "recall":  0.044655429537505315,
+                                           "recommendations":  5000,
+                                           "users":  500,
+                                           "users_with_10":  500,
+                                           "users_with_fewer_than_k":  0
+                                       },
+                                       {
+                                           "audit":  {
+                                                         "duplicate_pairs":  0,
+                                                         "duplicate_ranks":  0,
+                                                         "history_overlap":  0,
+                                                         "invalid_rows":  0,
+                                                         "metadata_mismatches":  0,
+                                                         "rows":  5000,
+                                                         "unexpected_users":  0,
+                                                         "users":  500
+                                                     },
+                                           "avg_recommendations_per_user":  10.0,
+                                           "contract_verification":  "PASS",
+                                           "hit_rate":  0.084,
+                                           "hits":  45,
+                                           "k":  10,
+                                           "max_recommendations_per_user":  10,
+                                           "mean_item_support":  290.319,
+                                           "method":  "HYBRID",
+                                           "metric_verification":  "PASS",
+                                           "min_recommendations_per_user":  10,
+                                           "parameter":  0.5,
+                                           "precision":  0.009,
+                                           "recall":  0.023498379886646843,
+                                           "recommendations":  5000,
+                                           "users":  500,
+                                           "users_with_10":  500,
+                                           "users_with_fewer_than_k":  0
+                                       },
+                                       {
+                                           "audit":  {
+                                                         "duplicate_pairs":  0,
+                                                         "duplicate_ranks":  0,
+                                                         "history_overlap":  0,
+                                                         "invalid_rows":  0,
+                                                         "metadata_mismatches":  0,
+                                                         "rows":  5000,
+                                                         "unexpected_users":  0,
+                                                         "users":  500
+                                                     },
+                                           "avg_recommendations_per_user":  10.0,
+                                           "contract_verification":  "PASS",
+                                           "hit_rate":  0.03,
+                                           "hits":  15,
+                                           "k":  10,
+                                           "max_recommendations_per_user":  10,
+                                           "mean_item_support":  98.6062,
+                                           "method":  "HYBRID",
+                                           "metric_verification":  "PASS",
+                                           "min_recommendations_per_user":  10,
+                                           "parameter":  0.75,
+                                           "precision":  0.003,
+                                           "recall":  0.008488118388063352,
+                                           "recommendations":  5000,
+                                           "users":  500,
+                                           "users_with_10":  500,
+                                           "users_with_fewer_than_k":  0
+                                       },
+                                       {
+                                           "audit":  {
+                                                         "duplicate_pairs":  0,
+                                                         "duplicate_ranks":  0,
+                                                         "history_overlap":  0,
+                                                         "invalid_rows":  0,
+                                                         "metadata_mismatches":  0,
+                                                         "rows":  5000,
+                                                         "unexpected_users":  0,
+                                                         "users":  500
+                                                     },
+                                           "avg_recommendations_per_user":  10.0,
+                                           "contract_verification":  "PASS",
+                                           "hit_rate":  0.316,
+                                           "hits":  198,
+                                           "k":  10,
+                                           "max_recommendations_per_user":  10,
+                                           "mean_item_support":  2893.3466,
+                                           "method":  "POPULARITY",
+                                           "metric_verification":  "PASS",
+                                           "min_recommendations_per_user":  10,
+                                           "parameter":  0.0,
+                                           "precision":  0.03960000000000001,
+                                           "recall":  0.07263974180464312,
+                                           "recommendations":  5000,
+                                           "users":  500,
+                                           "users_with_10":  500,
+                                           "users_with_fewer_than_k":  0
+                                       }
+                                   ],
+                       "runtime_sec":  164.401651839,
+                       "scope":  "500_DETERMINISTIC_SAMPLE_VALIDATION_USERS",
+                       "selected_config":  {
+                                               "candidate_pool_size":  1000,
+                                               "clear_gain_rule":  "recall gain \u003e= 0.01; precision improves; full-user coverage not lower",
+                                               "clear_validation_gain":  true,
+                                               "confirmation_model_path":  "hdfs://namenode:9000/project/movielens/output/tv3/model/als_best",
+                                               "global_train_core_mean":  3.5436634281859942,
+                                               "k":  10,
+                                               "locked_at_utc":  "2026-10-05T08:08:52.897186+00:00",
+                                               "method":  "SHRINKAGE",
+                                               "model_path":  "hdfs://namenode:9000/project/movielens/output/tv3/model/als_best",
+                                               "parameter":  50.0,
+                                               "popularity_candidate_pool_size":  100,
+                                               "protected_fingerprint":  {
+                                                                             "files":  47,
+                                                                             "sha256":  "a27fce31e478a4d2ab3fc05f9f93fa7de03701489d4dbb9c723f4744a6b9c186"
+                                                                         },
+                                               "raw_als_candidate_pool_size":  100,
+                                               "seed":  42,
+                                               "selection_dataset":  "SAMPLE_VALIDATION_INDEPENDENT_OF_SELECTION_MODEL",
+                                               "selection_metric":  "Recall@10",
+                                               "selection_model_fingerprint":  {
+                                                                                   "files":  24,
+                                                                                   "sha256":  "cb81fd3524ac09fe69aeedbf093530b3e867640c44c349ac125bf74a0b2e7788"
+                                                                               },
+                                               "selection_model_path":  "hdfs://namenode:9000/project/movielens/output/tv3/diagnostics/reranking_phase_d/selection_model",
+                                               "support_source":  "SAMPLE_TRAIN_CORE_ONLY",
+                                               "tie_break":  [
+                                                                 "Precision@10",
+                                                                 "HitRate@10",
+                                                                 "full_user_coverage",
+                                                                 "recommendation_count",
+                                                                 "simplicity",
+                                                                 "parameter"
+                                                             ],
+                                               "validation_is_unseen_by_selection_model":  true
+                                           },
+                       "selection_dataset":  "SAMPLE_VALIDATION_INDEPENDENT_OF_SELECTION_MODEL",
+                       "status":  "VALIDATION_SELECTED_INDEPENDENT",
+                       "support_distribution":  {
+                                                    "max":  3761,
+                                                    "median":  3,
+                                                    "min":  1,
+                                                    "p75":  14,
+                                                    "p90":  79,
+                                                    "p95":  197,
+                                                    "sum":  1123778,
+                                                    "supported_items":  26905
+                                                },
+                       "support_percentiles":  "percentile_approx accuracy=10000 over supported train-core items",
+                       "temporary_selection_model":  {
+                                                         "coldStartStrategy":  "drop",
+                                                         "core_validation_overlap":  0,
+                                                         "counts":  {
+                                                                        "sample_train_rows":  1243712,
+                                                                        "sample_users":  10000,
+                                                                        "train_core_rows":  1123778,
+                                                                        "validation_rows":  119934
+                                                                    },
+                                                         "factors":  {
+                                                                         "items":  {
+                                                                                       "distinct_ids":  26905,
+                                                                                       "invalid_rows":  0,
+                                                                                       "rows":  26905
+                                                                                   },
+                                                                         "users":  {
+                                                                                       "distinct_ids":  10000,
+                                                                                       "invalid_rows":  0,
+                                                                                       "rows":  10000
+                                                                                   }
+                                                                     },
+                                                         "fit_calls":  1,
+                                                         "fit_source":  "SAMPLE_TRAIN_CORE_ONLY",
+                                                         "fit_time_sec":  7.200765242999978,
+                                                         "generated_at_utc":  "2026-10-05T08:05:37.906939+00:00",
+                                                         "implicitPrefs":  false,
+                                                         "model_path":  "hdfs://namenode:9000/project/movielens/output/tv3/diagnostics/reranking_phase_d/selection_model",
+                                                         "model_scope":  "TEMPORARY_SELECTION_ONLY",
+                                                         "parameters":  {
+                                                                            "maxIter":  8,
+                                                                            "rank":  10,
+                                                                            "regParam":  0.05
+                                                                        },
+                                                         "protected_artifacts":  {
+                                                                                     "after":  {
+                                                                                                   "files":  47,
+                                                                                                   "sha256":  "a27fce31e478a4d2ab3fc05f9f93fa7de03701489d4dbb9c723f4744a6b9c186"
+                                                                                               },
+                                                                                     "before":  {
+                                                                                                    "files":  47,
+                                                                                                    "sha256":  "a27fce31e478a4d2ab3fc05f9f93fa7de03701489d4dbb9c723f4744a6b9c186"
+                                                                                                },
+                                                                                     "unchanged":  true
+                                                                                 },
+                                                         "runtime_sec":  49.539346153,
+                                                         "seed":  42,
+                                                         "selection_model_fingerprint":  {
+                                                                                             "files":  24,
+                                                                                             "sha256":  "cb81fd3524ac09fe69aeedbf093530b3e867640c44c349ac125bf74a0b2e7788"
+                                                                                         },
+                                                         "status":  "PASS",
+                                                         "validation_rows_in_fit":  0
+                                                     }
+                   },
+    "config_lock":  {
+                        "config":  {
+                                       "candidate_pool_size":  1000,
+                                       "clear_gain_rule":  "recall gain \u003e= 0.01; precision improves; full-user coverage not lower",
+                                       "clear_validation_gain":  true,
+                                       "confirmation_model_path":  "hdfs://namenode:9000/project/movielens/output/tv3/model/als_best",
+                                       "global_train_core_mean":  3.5436634281859942,
+                                       "k":  10,
+                                       "locked_at_utc":  "2026-10-05T08:08:52.897186+00:00",
+                                       "method":  "SHRINKAGE",
+                                       "model_path":  "hdfs://namenode:9000/project/movielens/output/tv3/model/als_best",
+                                       "parameter":  50.0,
+                                       "popularity_candidate_pool_size":  100,
+                                       "protected_fingerprint":  {
+                                                                     "files":  47,
+                                                                     "sha256":  "a27fce31e478a4d2ab3fc05f9f93fa7de03701489d4dbb9c723f4744a6b9c186"
+                                                                 },
+                                       "raw_als_candidate_pool_size":  100,
+                                       "seed":  42,
+                                       "selection_dataset":  "SAMPLE_VALIDATION_INDEPENDENT_OF_SELECTION_MODEL",
+                                       "selection_metric":  "Recall@10",
+                                       "selection_model_fingerprint":  {
+                                                                           "files":  24,
+                                                                           "sha256":  "cb81fd3524ac09fe69aeedbf093530b3e867640c44c349ac125bf74a0b2e7788"
+                                                                       },
+                                       "selection_model_path":  "hdfs://namenode:9000/project/movielens/output/tv3/diagnostics/reranking_phase_d/selection_model",
+                                       "support_source":  "SAMPLE_TRAIN_CORE_ONLY",
+                                       "tie_break":  [
+                                                         "Precision@10",
+                                                         "HitRate@10",
+                                                         "full_user_coverage",
+                                                         "recommendation_count",
+                                                         "simplicity",
+                                                         "parameter"
+                                                     ],
+                                       "validation_is_unseen_by_selection_model":  true
+                                   },
+                        "sha256":  "edc14957c3f390cb29c0656dcb1d0afd8320abc6c129850c1c3130fb9ca14d7e"
+                    },
+    "confirmation":  {
+                         "confirmation_model_path":  "hdfs://namenode:9000/project/movielens/output/tv3/model/als_best",
+                         "demo":  {
+                                      "duplicate_pairs":  0,
+                                      "duplicate_ranks":  0,
+                                      "history_overlap":  0,
+                                      "invalid_rows":  0,
+                                      "metadata_mismatches":  0,
+                                      "path":  "hdfs://namenode:9000/project/movielens/output/tv3/recommendations/topn_reranked",
+                                      "rows":  200,
+                                      "status":  "VERIFIED",
+                                      "unexpected_users":  0,
+                                      "users":  20
+                                  },
+                         "generated_at_utc":  "2026-10-05T08:20:36.477714+00:00",
+                         "limitation":  "TV2 test was observed in Phases B/C. This is confirmation, not an untouched holdout; selection used an independent temporary train_core model.",
+                         "lock_unchanged":  true,
+                         "locked_config":  {
+                                               "config":  {
+                                                              "candidate_pool_size":  1000,
+                                                              "clear_gain_rule":  "recall gain \u003e= 0.01; precision improves; full-user coverage not lower",
+                                                              "clear_validation_gain":  true,
+                                                              "confirmation_model_path":  "hdfs://namenode:9000/project/movielens/output/tv3/model/als_best",
+                                                              "global_train_core_mean":  3.5436634281859942,
+                                                              "k":  10,
+                                                              "locked_at_utc":  "2026-10-05T08:08:52.897186+00:00",
+                                                              "method":  "SHRINKAGE",
+                                                              "model_path":  "hdfs://namenode:9000/project/movielens/output/tv3/model/als_best",
+                                                              "parameter":  50.0,
+                                                              "popularity_candidate_pool_size":  100,
+                                                              "protected_fingerprint":  {
+                                                                                            "files":  47,
+                                                                                            "sha256":  "a27fce31e478a4d2ab3fc05f9f93fa7de03701489d4dbb9c723f4744a6b9c186"
+                                                                                        },
+                                                              "raw_als_candidate_pool_size":  100,
+                                                              "seed":  42,
+                                                              "selection_dataset":  "SAMPLE_VALIDATION_INDEPENDENT_OF_SELECTION_MODEL",
+                                                              "selection_metric":  "Recall@10",
+                                                              "selection_model_fingerprint":  {
+                                                                                                  "files":  24,
+                                                                                                  "sha256":  "cb81fd3524ac09fe69aeedbf093530b3e867640c44c349ac125bf74a0b2e7788"
+                                                                                              },
+                                                              "selection_model_path":  "hdfs://namenode:9000/project/movielens/output/tv3/diagnostics/reranking_phase_d/selection_model",
+                                                              "support_source":  "SAMPLE_TRAIN_CORE_ONLY",
+                                                              "tie_break":  [
+                                                                                "Precision@10",
+                                                                                "HitRate@10",
+                                                                                "full_user_coverage",
+                                                                                "recommendation_count",
+                                                                                "simplicity",
+                                                                                "parameter"
+                                                                            ],
+                                                              "validation_is_unseen_by_selection_model":  true
+                                                          },
+                                               "sha256":  "edc14957c3f390cb29c0656dcb1d0afd8320abc6c129850c1c3130fb9ca14d7e"
+                                           },
+                         "protected_artifacts":  {
+                                                     "after":  {
+                                                                   "files":  47,
+                                                                   "sha256":  "a27fce31e478a4d2ab3fc05f9f93fa7de03701489d4dbb9c723f4744a6b9c186"
+                                                               },
+                                                     "before":  {
+                                                                    "files":  47,
+                                                                    "sha256":  "a27fce31e478a4d2ab3fc05f9f93fa7de03701489d4dbb9c723f4744a6b9c186"
+                                                                },
+                                                     "unchanged":  true
+                                                 },
+                         "results":  [
+                                         {
+                                             "audit":  {
+                                                           "duplicate_pairs":  0,
+                                                           "duplicate_ranks":  0,
+                                                           "history_overlap":  0,
+                                                           "invalid_rows":  0,
+                                                           "metadata_mismatches":  0,
+                                                           "rows":  5000,
+                                                           "unexpected_users":  0,
+                                                           "users":  500
+                                                       },
+                                             "avg_recommendations_per_user":  10.0,
+                                             "contract_verification":  "PASS",
+                                             "hit_rate":  0.0,
+                                             "hits":  0,
+                                             "k":  10,
+                                             "max_recommendations_per_user":  10,
+                                             "mean_item_support":  3.9766,
+                                             "method":  "RAW_ALS",
+                                             "metric_verification":  "PASS",
+                                             "min_recommendations_per_user":  10,
+                                             "parameter":  0.0,
+                                             "precision":  0.0,
+                                             "recall":  0.0,
+                                             "recommendations":  5000,
+                                             "role":  "RAW_ALS",
+                                             "users":  500,
+                                             "users_with_10":  500,
+                                             "users_with_fewer_than_k":  0
+                                         },
+                                         {
+                                             "audit":  {
+                                                           "duplicate_pairs":  0,
+                                                           "duplicate_ranks":  0,
+                                                           "history_overlap":  0,
+                                                           "invalid_rows":  0,
+                                                           "metadata_mismatches":  0,
+                                                           "rows":  5000,
+                                                           "unexpected_users":  0,
+                                                           "users":  500
+                                                       },
+                                             "avg_recommendations_per_user":  10.0,
+                                             "contract_verification":  "PASS",
+                                             "hit_rate":  0.454,
+                                             "hits":  451,
+                                             "k":  10,
+                                             "max_recommendations_per_user":  10,
+                                             "mean_item_support":  1037.7942,
+                                             "method":  "SHRINKAGE",
+                                             "metric_verification":  "PASS",
+                                             "min_recommendations_per_user":  10,
+                                             "parameter":  50.0,
+                                             "precision":  0.09019999999999997,
+                                             "recall":  0.07050958922207008,
+                                             "recommendations":  5000,
+                                             "role":  "RERANKED_ALS",
+                                             "users":  500,
+                                             "users_with_10":  500,
+                                             "users_with_fewer_than_k":  0
+                                         },
+                                         {
+                                             "audit":  {
+                                                           "duplicate_pairs":  0,
+                                                           "duplicate_ranks":  0,
+                                                           "history_overlap":  0,
+                                                           "invalid_rows":  0,
+                                                           "metadata_mismatches":  0,
+                                                           "rows":  5000,
+                                                           "unexpected_users":  0,
+                                                           "users":  500
+                                                       },
+                                             "avg_recommendations_per_user":  10.0,
+                                             "contract_verification":  "PASS",
+                                             "hit_rate":  0.588,
+                                             "hits":  627,
+                                             "k":  10,
+                                             "max_recommendations_per_user":  10,
+                                             "mean_item_support":  2869.5808,
+                                             "method":  "POPULARITY",
+                                             "metric_verification":  "PASS",
+                                             "min_recommendations_per_user":  10,
+                                             "parameter":  0.0,
+                                             "precision":  0.12539999999999996,
+                                             "recall":  0.10037421561174709,
+                                             "recommendations":  5000,
+                                             "role":  "POPULARITY",
+                                             "users":  500,
+                                             "users_with_10":  500,
+                                             "users_with_fewer_than_k":  0
+                                         }
+                                     ],
+                         "runtime_sec":  83.7851895140002,
+                         "sample_test_rows":  315869,
+                         "sample_train_test_overlap":  0,
+                         "status":  "CONFIRMATORY_COMPLETE_WARNING",
+                         "support_source":  "SAMPLE_TRAIN_CORE_ONLY"
+                     },
+    "verification":  {
+                         "generated_at_utc":  "2026-10-05T08:21:41.948575+00:00",
+                         "lock_sha256":  "edc14957c3f390cb29c0656dcb1d0afd8320abc6c129850c1c3130fb9ca14d7e",
+                         "protected_outputs_unchanged":  true,
+                         "selection_model_fit_calls":  1,
+                         "selection_model_independence":  "PASS",
+                         "status":  "PASS_CONFIRMATORY_TEST_LIMITATION",
+                         "test_evaluation_repeated":  false,
+                         "verification_status":  "PASS"
+                     }
+}
