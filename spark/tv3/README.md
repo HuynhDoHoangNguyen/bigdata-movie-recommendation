@@ -19,6 +19,18 @@ Precision@10=0.1252 versus ALS=0. The saved model and handoff remain unchanged.
 `ranking_diagnostic.py` reads the saved model without fitting and refuses an
 existing diagnostic output path; its completed results should be read directly.
 
+Phase D is complete: [reranking report](../../docs/TV3_RERANKING_PHASE_D_REPORT.md).
+One temporary train_core ALS model was fit for independent validation selection;
+SHRINKAGE alpha=50 was locked before sample test confirmation using the unchanged
+Phase B model. Test Precision@10=0.0902, Recall@10=0.070510, HitRate@10=0.454
+(451 hits); raw ALS remains zero, popularity is higher at Precision@10=0.1254.
+Verified `recommendations/topn_reranked` contains 200 rows for the same 20 demo
+users, adding `adjusted_score` and `train_support` to the raw recommendation schema.
+See the TV4 handoff for both output contracts and the confirmatory-test limitation.
+`reranking_phase_d.py` stages `checks`, `fit-selection`, `validation`, `confirm`,
+and `verify` have completed; they refuse existing outputs. Read the saved reports
+instead of rerunning selection, fitting, or test confirmation. Full ALS has not run.
+
 `final_sample.py` fits one model from preserved tuning evidence and evaluates
 matching sample TV2 test; `sample_handoff.py` reloads it in a separate application
 and exports demo Top-N/Top-K. They refuse existing outputs and never tune/full-fit.
